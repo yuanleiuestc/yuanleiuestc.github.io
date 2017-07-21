@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Mot-clé: 时间序列 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://yuanleiuestc.github.io/index.html">
+<meta property="og:url" content="https://yuanleiuestc.github.io/tags/时间序列/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
@@ -61,94 +61,36 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-时间序列" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/08/时间序列/" class="article-date">
-  <time datetime="2017-07-08T14:00:30.000Z" itemprop="datePublished">2017-07-08</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2017/07/08/时间序列/" class="archive-article-date">
+  <time datetime="2017-07-08T14:00:30.000Z" itemprop="datePublished">Jul 8</time>
 </a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/08/时间序列/">hexo+github 博客搭建</a>
+      <a class="archive-article-title" href="/2017/07/08/时间序列/">hexo+github 博客搭建</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#时间序列预测 python实现<br>使用<strong><code>ARIMA</code></strong>实现。</p>
-<p>##理论知识<br>ARIMA模型全称为自回归积分滑动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，<br>ARIMA(p,d,q)称为差分自回归移动平均模型<br>AR是”自回归”，p为自回归项数；MA为”滑动平均”，q为滑动平均项数，d为使之成为平稳序列所做的差分次数（阶数）</p>
-<p>时间序列的假设：<strong>时间序列的行为不随时间改变</strong>。。数学知识不足，去学习相关的知识。</p>
-<p>1.首先识别时间序列的稳定性，通过<code>散点图</code>，<code>自相关函数</code>，<code>偏相关函数</code>判断是否平稳<br>2.如果不是平稳的，采用d阶查分，使得序列变得稳定。<br><strong>？？为什么算法要求文档呢</strong><br>AC自相关系数 ，PAC偏相关系数 </p>
-<p>3.根据所识别的特征建立相应的时间模型，自相关函数是拖尾的（？？）<br>采用AR模型，偏相关拖尾的，采用 MA模型，自相关函数和偏相关函数都是拖尾的，则采用 ARMA模型</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yuanleiuestc.github.io/2017/07/08/时间序列/" data-id="cj5dl9jop0000ycj10bz090gp" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ARIMA/">ARIMA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习，python/">学习，python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/时间序列/">时间序列</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
 </article>
-
-
   
-    <article id="post-hexo-github-博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/07/hexo-github-博客搭建/" class="article-date">
-  <time datetime="2017-07-07T14:01:30.000Z" itemprop="datePublished">2017-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/07/hexo-github-博客搭建/">hexo+github 博客搭建</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Hexo-github博客搭建"><a href="#Hexo-github博客搭建" class="headerlink" title="Hexo+github博客搭建"></a>Hexo+github博客搭建</h1><h2 id="安装软件node-js-git-网上找资料下"><a href="#安装软件node-js-git-网上找资料下" class="headerlink" title="安装软件node.js , git 网上找资料下"></a>安装软件node.js , git 网上找资料下</h2><h2 id="安装Hexo-本博客采用3-0版本"><a href="#安装Hexo-本博客采用3-0版本" class="headerlink" title="安装Hexo(本博客采用3.0版本)"></a>安装Hexo(本博客采用3.0版本)</h2><p>   打开Git Bash,执行下面命令</p>
-<pre><code> npm install -g hexo-cli
-</code></pre>
-如果安装失败，采用淘宝的镜像
-        
-          <p class="article-more-link">
-            <a href="/2017/07/07/hexo-github-博客搭建/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yuanleiuestc.github.io/2017/07/07/hexo-github-博客搭建/" data-id="cj5dl9jow0001ycj1c98ky609" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
+    </div></section>
   
 
 </section>

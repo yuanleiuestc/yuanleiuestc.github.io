@@ -5,17 +5,17 @@
   
   <title>hexo+github 博客搭建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo+github博客搭建安装软件node.js , git 网上找资料下安装Hexo(本博客采用3.0版本)   打开Git Bash,执行下面命令  npm install -g hexo-cli  如果安装失败，采用淘宝的镜像">
-<meta name="keywords" content="学习">
+  <meta name="description" content="#时间序列预测 python实现使用ARIMA实现。 ##理论知识ARIMA模型全称为自回归积分滑动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，ARIMA(p,d,q)称为差分自回归移动平均模型AR是”自回归”，p为自回归项数；MA为”滑动平均”，q为滑动平均项数，d为使之成为平稳序列所做的差分次数（阶数） 时间序列的假">
+<meta name="keywords" content="学习，python,ARIMA,时间序列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+github 博客搭建">
-<meta property="og:url" content="https://yuanleiuestc.github.io/2017/07/07/hexo-github-博客搭建/index.html">
+<meta property="og:url" content="https://yuanleiuestc.github.io/2017/07/08/时间序列/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hexo+github博客搭建安装软件node.js , git 网上找资料下安装Hexo(本博客采用3.0版本)   打开Git Bash,执行下面命令  npm install -g hexo-cli  如果安装失败，采用淘宝的镜像">
-<meta property="og:updated_time" content="2017-07-21T08:11:46.000Z">
+<meta property="og:description" content="#时间序列预测 python实现使用ARIMA实现。 ##理论知识ARIMA模型全称为自回归积分滑动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，ARIMA(p,d,q)称为差分自回归移动平均模型AR是”自回归”，p为自回归项数；MA为”滑动平均”，q为滑动平均项数，d为使之成为平稳序列所做的差分次数（阶数） 时间序列的假">
+<meta property="og:updated_time" content="2017-07-21T08:06:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github 博客搭建">
-<meta name="twitter:description" content="Hexo+github博客搭建安装软件node.js , git 网上找资料下安装Hexo(本博客采用3.0版本)   打开Git Bash,执行下面命令  npm install -g hexo-cli  如果安装失败，采用淘宝的镜像">
+<meta name="twitter:description" content="#时间序列预测 python实现使用ARIMA实现。 ##理论知识ARIMA模型全称为自回归积分滑动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，ARIMA(p,d,q)称为差分自回归移动平均模型AR是”自回归”，p为自回归项数；MA为”滑动平均”，q为滑动平均项数，d为使之成为平稳序列所做的差分次数（阶数） 时间序列的假">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hexo-github-博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-时间序列" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/07/07/hexo-github-博客搭建/" class="article-date">
-  <time datetime="2017-07-07T14:01:30.000Z" itemprop="datePublished">2017-07-07</time>
+    <a href="/2017/07/08/时间序列/" class="article-date">
+  <time datetime="2017-07-08T14:00:30.000Z" itemprop="datePublished">2017-07-08</time>
 </a>
     
   </div>
@@ -86,86 +86,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Hexo-github博客搭建"><a href="#Hexo-github博客搭建" class="headerlink" title="Hexo+github博客搭建"></a>Hexo+github博客搭建</h1><h2 id="安装软件node-js-git-网上找资料下"><a href="#安装软件node-js-git-网上找资料下" class="headerlink" title="安装软件node.js , git 网上找资料下"></a>安装软件node.js , git 网上找资料下</h2><h2 id="安装Hexo-本博客采用3-0版本"><a href="#安装Hexo-本博客采用3-0版本" class="headerlink" title="安装Hexo(本博客采用3.0版本)"></a>安装Hexo(本博客采用3.0版本)</h2><p>   打开Git Bash,执行下面命令</p>
-<pre><code> npm install -g hexo-cli
-</code></pre>
-如果安装失败，采用淘宝的镜像
+        <p>#时间序列预测 python实现<br>使用<strong><code>ARIMA</code></strong>实现。</p>
+<p>##理论知识<br>ARIMA模型全称为自回归积分滑动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，<br>ARIMA(p,d,q)称为差分自回归移动平均模型<br>AR是”自回归”，p为自回归项数；MA为”滑动平均”，q为滑动平均项数，d为使之成为平稳序列所做的差分次数（阶数）</p>
+<p>时间序列的假设：<strong>时间序列的行为不随时间改变</strong>。。数学知识不足，去学习相关的知识。</p>
+<p>1.首先识别时间序列的稳定性，通过<code>散点图</code>，<code>自相关函数</code>，<code>偏相关函数</code>判断是否平稳<br>2.如果不是平稳的，采用d阶查分，使得序列变得稳定。<br><strong>？？为什么算法要求文档呢</strong><br>AC自相关系数 ，PAC偏相关系数 </p>
+<p>3.根据所识别的特征建立相应的时间模型，自相关函数是拖尾的（？？）<br>采用AR模型，偏相关拖尾的，采用 MA模型，自相关函数和偏相关函数都是拖尾的，则采用 ARMA模型</p>
 
-
-<a id="more"></a>
-<pre><code>
-     npm install -g cnpm --registry=https://registry.npm.taobao.org
-</code></pre>
-#本地建立文件夹E:\hexo
-进入目录，右键GitBash
-执行
-<pre><code>
-hexo init
-npm install
-hexo g
-hexo s
-或者hexo s -g
-</code></pre>
-之后输入http://localhost:4000/就能看到博客
-，
-新的博客可以在E:\hexo\source\_posts增加文件，md文件。
-
-##注册github 创建新的仓库，仓库名字必须是：username.github.io，其中username是你的用户名；
-
-##配置SSHKey
-主要是为了安全，直接提交代码需要github的代码，不是很安全，采用机密的方式更加安全。
-<pre><code>
-ssh-keygen -t rsa -C "邮件地址"
-</code></pre>
-密钥保存在C:\Users\yuan\.ssh\id_rsa.pub
-密钥添加到github
-入个人设置 -> SSH and GPG keys -> New SSH key
-
-测试是否成功
-<pre><code>
-ssh -T git@github.com
-</code></pre>
-在设计
-<pre><code>
-git config --global user.name "yuanleiuestc"// 你的github用户名，非昵称
-git config --global user.email  "xxx@163.com"// 填写你的github注册
-</code></pre>
-##配置_config.yml
-3.0之前
-<pre><code>
-deploy: 
-  type: git
-  repository: http://github.com/huangjunhui/huangjunhui.github.io.git
-  branch: master
-</code></pre>
-3.0，目前我用的
-<pre><code>
-url: https://yuanleiuestc.github.io #你的博客地址
-
-deploy:
-  type: git
-  repository: git@github.com:yuanleiuestc/yuanleiuestc.github.io.git
-  branch: maste
-</code></pre>
-
-<h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><pre><code>
-hexo new 'my-first-blog'
-</code></pre>
-
-<p>editor.md编辑器</p>
-<p> npm install hexo-deployer-git –save</p>
-<p>##发布</p>
-<pre><code>
- hexo generate
- hexo  deloy
-</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://yuanleiuestc.github.io/2017/07/07/hexo-github-博客搭建/" data-id="cj5dl9jow0001ycj1c98ky609" class="article-share-link">Partager</a>
+      <a data-url="https://yuanleiuestc.github.io/2017/07/08/时间序列/" data-id="cj5dl9jop0000ycj10bz090gp" class="article-share-link">Partager</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ARIMA/">ARIMA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习，python/">学习，python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/时间序列/">时间序列</a></li></ul>
 
     </footer>
   </div>
@@ -173,15 +106,11 @@ hexo new 'my-first-blog'
     
 <nav id="article-nav">
   
-    <a href="/2017/07/08/时间序列/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
-      <div class="article-nav-title">
-        
-          hexo+github 博客搭建
-        
-      </div>
-    </a>
   
+    <a href="/2017/07/07/hexo-github-博客搭建/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">hexo+github 博客搭建</div>
+    </a>
   
 </nav>
 
