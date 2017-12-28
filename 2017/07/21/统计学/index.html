@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="11章 总体和样本的估计 进行预测内容： 如何通过样本估计总体，如何通过总体了解样本 样本估计总体样本的均值被称为总体均值的点估计量 总体的均值可以用样本的均值进行评估。不能直接用样本的方差直接估计总体的方差。因为样本的方差会小于总体的离散程度。 样本的概率估计估计总体的概率总体的估计样本的概率 如果考虑同一个总体中所有大小为n的可能样本，然后用这些样本的均值形成分布我，则该分布为“均值的抽样分布">
+<meta property="og:type" content="article">
+<meta property="og:title" content="统计学">
+<meta property="og:url" content="https://yuanleiuestc.github.io/2017/07/21/统计学/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="11章 总体和样本的估计 进行预测内容： 如何通过样本估计总体，如何通过总体了解样本 样本估计总体样本的均值被称为总体均值的点估计量 总体的均值可以用样本的均值进行评估。不能直接用样本的方差直接估计总体的方差。因为样本的方差会小于总体的离散程度。 样本的概率估计估计总体的概率总体的估计样本的概率 如果考虑同一个总体中所有大小为n的可能样本，然后用这些样本的均值形成分布我，则该分布为“均值的抽样分布">
+<meta property="og:image" content="https://yuanleiuestc.github.io/images/chi.png">
+<meta property="og:updated_time" content="2017-07-31T09:19:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="统计学">
+<meta name="twitter:description" content="11章 总体和样本的估计 进行预测内容： 如何通过样本估计总体，如何通过总体了解样本 样本估计总体样本的均值被称为总体均值的点估计量 总体的均值可以用样本的均值进行评估。不能直接用样本的方差直接估计总体的方差。因为样本的方差会小于总体的离散程度。 样本的概率估计估计总体的概率总体的估计样本的概率 如果考虑同一个总体中所有大小为n的可能样本，然后用这些样本的均值形成分布我，则该分布为“均值的抽样分布">
+<meta name="twitter:image" content="https://yuanleiuestc.github.io/images/chi.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://yuanleiuestc.github.io/2017/07/21/统计学/"/>
+
+
+
+
+
+  <title>统计学 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/07/21/统计学/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">统计学</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-21T16:20:27+08:00">
+                2017-07-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/21/统计学/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/07/21/统计学/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="11章-总体和样本的估计-进行预测"><a href="#11章-总体和样本的估计-进行预测" class="headerlink" title="11章 总体和样本的估计 进行预测"></a>11章 总体和样本的估计 进行预测</h1><p><strong>内容</strong>： 如何通过样本估计总体，如何通过总体了解样本</p>
+<h2 id="样本估计总体"><a href="#样本估计总体" class="headerlink" title="样本估计总体"></a>样本估计总体</h2><p>样本的均值被称为总体均值的点估计量</p>
+<p>总体的均值可以用样本的均值进行评估。<br>不能直接用样本的方差直接估计总体的方差。因为样本的方差会小于总体的离散程度。</p>
+<p>样本的概率估计估计总体的概率<br>总体的估计样本的概率</p>
+<p>如果考虑同一个总体中所有大小为n的可能样本，然后用这些样本的均值形成分布我，则该分布为“均值的抽样分布”。   </p>
+<h1 id="12章-置信区间的构建"><a href="#12章-置信区间的构建" class="headerlink" title="12章 置信区间的构建"></a>12章 置信区间的构建</h1><p>用样本来衡量总体，如果只是采用一个点，则可能有很大的误差，采用一个置信区间的更加的合理。<br>求解置信区间的四步骤：</p>
+<ol>
+<li>选择总体估计量</li>
+<li>求出其抽样分布</li>
+<li>决定置信水平</li>
+<li>求出置信上下限</li>
+</ol>
+<p>当样本数目比较大时，采用正态分布，当在用小样本估计总体方差时，<strong>T分布更加准确</strong>。  </p>
+<p>上2章介绍了两钟估计总体统计量的方法。</p>
+<ol>
+<li>点估计量</li>
+<li>使用总体统计量的置信区间</li>
+</ol>
+<h1 id="第13章-假设检验的应用"><a href="#第13章-假设检验的应用" class="headerlink" title="第13章 假设检验的应用"></a>第13章 假设检验的应用</h1><p>假设检验的六个步骤</p>
+<ol>
+<li>确定要进行检验的假设</li>
+<li>选择检验统计量</li>
+<li>确认用于做决策的拒绝域</li>
+<li>求出检验统计量的P值</li>
+<li>查看样本的结果是否位于拒绝域内</li>
+<li>作出决策</li>
+</ol>
+<p>第一类错误：原假设正确却拒绝原假设 ，即检验的显著水平<br>第二类错误：原假设错误却接受原假设</p>
+<h1 id="第14章-卡方分布"><a href="#第14章-卡方分布" class="headerlink" title="第14章 卡方分布"></a>第14章 卡方分布</h1><p><strong>目的</strong>：检查实际结果与期望结果之间何时存在显著差别。   </p>
+<p>卡方统计量的用途：</p>
+<ol>
+<li>检验<strong>拟合优度</strong></li>
+<li>检验2个变量的<strong>独立性</strong>。</li>
+</ol>
+<p>卡方检验的六个步骤</p>
+<ol>
+<li>确定要进行检验的假设以及备选假设</li>
+<li>求出期望频数和自由度</li>
+<li>确认用于做决策的拒绝域</li>
+<li>计算检验统计量卡方</li>
+<li>查看样本的结果是否位于拒绝域内</li>
+<li>作出决策</li>
+</ol>
+<p><img src="/images/chi.png" alt=""></p>
+<h1 id="第15章-相关和回归"><a href="#第15章-相关和回归" class="headerlink" title="第15章 相关和回归"></a>第15章 相关和回归</h1><p>之前都是对单一的变量进行分析，现在对2个变量进行相关的分析。<br>因变量和自变量</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/08/时间序列/" rel="next" title="时间序列预测 python实现">
+                <i class="fa fa-chevron-left"></i> 时间序列预测 python实现
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/22/java学习/" rel="prev" title="java学习">
+                java学习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="John Doe" />
+          <p class="site-author-name" itemprop="name">John Doe</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#11章-总体和样本的估计-进行预测"><span class="nav-number">1.</span> <span class="nav-text">11章 总体和样本的估计 进行预测</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#样本估计总体"><span class="nav-number">1.1.</span> <span class="nav-text">样本估计总体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12章-置信区间的构建"><span class="nav-number">2.</span> <span class="nav-text">12章 置信区间的构建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第13章-假设检验的应用"><span class="nav-number">3.</span> <span class="nav-text">第13章 假设检验的应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第14章-卡方分布"><span class="nav-number">4.</span> <span class="nav-text">第14章 卡方分布</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第15章-相关和回归"><span class="nav-number">5.</span> <span class="nav-text">第15章 相关和回归</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://yuanleiuestc.github.io/2017/07/21/统计学/';
+          this.page.identifier = '2017/07/21/统计学/';
+          this.page.title = '统计学';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

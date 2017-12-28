@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="study," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="Python一种解释型的，面向对象的，带有动态语义的高级程序设计语言 第一章 基础知识1.1 基本运算符12+，-，*，/，%，//( 取整)，**（幂运算） 八进制 0o十六进制 0x长字符串用3个引号代替转义字符\变量，语句，函数，模块等概念 2 列表和元组2.1 序列概述pythomn 最基本数据结构是序列，序列中的每个元素被分配一个序列——即元素的位置，也称为索引。第一个索引序号为0 Py">
+<meta name="keywords" content="study">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python 学习笔记1">
+<meta property="og:url" content="https://yuanleiuestc.github.io/2017/08/16/python-学习笔记1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Python一种解释型的，面向对象的，带有动态语义的高级程序设计语言 第一章 基础知识1.1 基本运算符12+，-，*，/，%，//( 取整)，**（幂运算） 八进制 0o十六进制 0x长字符串用3个引号代替转义字符\变量，语句，函数，模块等概念 2 列表和元组2.1 序列概述pythomn 最基本数据结构是序列，序列中的每个元素被分配一个序列——即元素的位置，也称为索引。第一个索引序号为0 Py">
+<meta property="og:updated_time" content="2017-08-16T09:03:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python 学习笔记1">
+<meta name="twitter:description" content="Python一种解释型的，面向对象的，带有动态语义的高级程序设计语言 第一章 基础知识1.1 基本运算符12+，-，*，/，%，//( 取整)，**（幂运算） 八进制 0o十六进制 0x长字符串用3个引号代替转义字符\变量，语句，函数，模块等概念 2 列表和元组2.1 序列概述pythomn 最基本数据结构是序列，序列中的每个元素被分配一个序列——即元素的位置，也称为索引。第一个索引序号为0 Py">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://yuanleiuestc.github.io/2017/08/16/python-学习笔记1/"/>
+
+
+
+
+
+  <title>python 学习笔记1 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/08/16/python-学习笔记1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python 学习笔记1</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-16T16:37:24+08:00">
+                2017-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/16/python-学习笔记1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/08/16/python-学习笔记1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><p>一种解释型的，面向对象的，带有动态语义的高级程序设计语言</p>
+<h2 id="第一章-基础知识"><a href="#第一章-基础知识" class="headerlink" title="第一章 基础知识"></a>第一章 基础知识</h2><h2 id="1-1-基本运算符"><a href="#1-1-基本运算符" class="headerlink" title="1.1 基本运算符"></a>1.1 基本运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+，-，*，/，%，//( 取整)，**（幂运算）</div></pre></td></tr></table></figure>
+<p>八进制 0o<br>十六进制 0x<br>长字符串用3个引号代替<br>转义字符\<br>变量，语句，函数，模块等概念</p>
+<h1 id="2-列表和元组"><a href="#2-列表和元组" class="headerlink" title="2 列表和元组"></a>2 列表和元组</h1><h2 id="2-1-序列概述"><a href="#2-1-序列概述" class="headerlink" title="2.1 序列概述"></a>2.1 序列概述</h2><p>pythomn 最基本数据结构是序列，序列中的每个元素被分配一个序列——即元素的位置，也称为索引。第一个索引序号为0</p>
+<p>Python中六种内建的序列 ： 列表，元祖，字符串，Unicode字符串，buffer对象.xrange对象</p>
+<p><strong>列表和元组的区别</strong>：列表是可以修改的，元组是不能的</p>
+<a id="more"></a>
+<h2 id="2-2通用序列操作"><a href="#2-2通用序列操作" class="headerlink" title="2.2通用序列操作"></a>2.2通用序列操作</h2><h3 id="2-2-1索引"><a href="#2-2-1索引" class="headerlink" title="2.2.1索引"></a>2.2.1索引</h3><p>序列中所有的元素都是有编号的–从0开始递增。可以通过编号分别对序列的元素进行访问。Python的序列也可以从右边开始索引，最右边的一个元素的索引为-1，想左开始递减。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;greeting =&apos;hello&apos;</div><div class="line">&gt;&gt;&gt;gteering[0]</div><div class="line">&apos;h&apos;</div><div class="line">&gt;&gt;&gt;gteering[-1]</div><div class="line">&apos;o&apos;</div></pre></td></tr></table></figure></p>
+<h3 id="2-2-2-分片"><a href="#2-2-2-分片" class="headerlink" title="2.2.2 分片"></a>2.2.2 分片</h3><p> 使用分片可以访问一定范围内的元素,<strong>第一个索引的元素是包含在分片内的，第二个则不包含在分片内。</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; number=[1,2,3,4,5,6,7,8,9,10]</div><div class="line">&gt;&gt;&gt; number[2:4] #取索引为第二和第三的元素</div><div class="line">[3, 4]</div><div class="line">&gt;&gt;&gt; number[-4:-1] #负数表明是从右开始计数,不能到0</div><div class="line">[7, 8, 9]</div><div class="line">&gt;&gt;&gt; number[-4:] #把第二个索引置空，表明包括到序列结尾的元素</div><div class="line">[7, 8, 9, 10]</div><div class="line">&gt;&gt;&gt; number[:3] #同上，把第一个索引置空，表明包含序列开始的元素</div><div class="line">[1, 2, 3]</div><div class="line">&gt;&gt;&gt; number[0:10:1] #默认在分片的时候，步长为1,这样指定步长为1，和默认的效果一样</div><div class="line">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</div><div class="line">&gt;&gt;&gt; number[0:10:2] #这里指定步长为2，这样就会跳过某些序列元素</div><div class="line">[1, 3, 5, 7, 9]</div><div class="line">&gt;&gt;&gt; number[10:0:-1] #步长也可以是负数，但是第一个索引一定要大于第二个索引</div><div class="line">[10, 9, 8, 7, 6, 5, 4, 3, 2]</div><div class="line">&gt;&gt;&gt; number[10:0:-2] </div><div class="line">[10, 8, 6, 4, 2]</div></pre></td></tr></table></figure></p>
+<h3 id="2-2-3-序列相加"><a href="#2-2-3-序列相加" class="headerlink" title="2.2.3 序列相加"></a>2.2.3 序列相加</h3><p>使用加号运算符<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; [1,2,3]+[4,5,6]</div><div class="line">[1, 2, 3, 4, 5, 6]</div><div class="line">&gt;&gt;&gt; &apos;Hello &apos;+&apos;World!&apos;</div><div class="line">&apos;Hello World!&apos;</div><div class="line">&gt;&gt;&gt; [1,2,3]+&apos;Hello&apos;</div><div class="line">Traceback (most recent call last):</div><div class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</div><div class="line">TypeError: can only concatenate list (not &quot;str&quot;) to list</div></pre></td></tr></table></figure></p>
+<p>最后一个例子，试图列表和字符串进行相加，出错。<br>两种相同类型的序列才能进行连接操作</p>
+<h3 id="2-2-4乘法"><a href="#2-2-4乘法" class="headerlink" title="2.2.4乘法"></a>2.2.4乘法</h3><p>用数字x剩以一个序列会生成新的序列，而在新的序列中，原来的序列将会被重复x次。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; &apos;python&apos;*4</div><div class="line">&apos;pythonpythonpythonpython&apos;</div><div class="line">&gt;&gt;&gt; [None]*4 #None为Python的内建值，这里创建长度为4的元素空间，但是什么元素也不包含</div><div class="line">[None, None, None, None]</div></pre></td></tr></table></figure></p>
+<h3 id="2-2-5成员资格"><a href="#2-2-5成员资格" class="headerlink" title="2.2.5成员资格"></a>2.2.5成员资格</h3><p>检测一个值是否存在序列当中 ，用IN运算符。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; permission=&apos;rw&apos;</div><div class="line">&gt;&gt;&gt; &apos;r&apos; in permission</div><div class="line">True</div><div class="line">&gt;&gt;&gt; &apos;x&apos; in permission</div><div class="line">False</div><div class="line"></div><div class="line">&gt;&gt;&gt;a =[1,2,3,4]</div><div class="line">&gt;&gt;&gt;1 in a</div><div class="line">True</div><div class="line">&gt;&gt;&gt; 5 in a </div><div class="line">False</div></pre></td></tr></table></figure>
+<h3 id="2-2-6-长度，最小值，最大值"><a href="#2-2-6-长度，最小值，最大值" class="headerlink" title="2.2.6 长度，最小值，最大值"></a>2.2.6 长度，最小值，最大值</h3><p>len 长度<br>max 最大值<br>min 最小值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; number=[2,3,4,5,6,7,8,9,10]</div><div class="line">&gt;&gt;&gt; len(number)</div><div class="line">9</div><div class="line">&gt;&gt;&gt; min(number)</div><div class="line">2</div><div class="line">&gt;&gt;&gt; max(number)</div><div class="line">10</div><div class="line">&gt;&gt;&gt; min(4,3,5) #函数的参数不用一定是序列，也可以是多个数字</div><div class="line">3</div></pre></td></tr></table></figure></p>
+<h2 id="2-3-列表"><a href="#2-3-列表" class="headerlink" title="2.3 列表"></a>2.3 列表</h2><p>列表之间的元素用逗号隔开，可以存放不同的类型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">a= [1,2,3,&apos;hello&apos;]</div></pre></td></tr></table></figure></p>
+<h3 id="2-3-1-list函数"><a href="#2-3-1-list函数" class="headerlink" title="2.3.1 list函数"></a>2.3.1 list函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;list(&apos;hello&apos;)</div><div class="line">[&apos;h&apos;,&apos;e&apos;,&apos;l,&apos;l&apos;,&apos;o&apos;]</div><div class="line"></div><div class="line">&apos;&apos;.join(somelist) #将一个由字符组成的列表转换成字符串，如果既有字符也有数字会报错</div></pre></td></tr></table></figure>
+<h3 id="2-3-2-基本的列表操作"><a href="#2-3-2-基本的列表操作" class="headerlink" title="2.3.2 基本的列表操作"></a>2.3.2 基本的列表操作</h3><h5 id="1-元素赋值"><a href="#1-元素赋值" class="headerlink" title="1 元素赋值"></a>1 元素赋值</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; x=[1,2,3]</div><div class="line">&gt;&gt;&gt; x</div><div class="line">[1, 2, 3]</div><div class="line">&gt;&gt;&gt; x[1]=4 #使用索引来标记某个特定位置，然后对位置明确的元素赋值</div><div class="line">&gt;&gt;&gt; x</div><div class="line">[1, 4, 3]</div></pre></td></tr></table></figure>
+<h5 id="2-删除元素"><a href="#2-删除元素" class="headerlink" title="2 删除元素"></a>2 删除元素</h5><p>del<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; name=[&apos;Clef&apos;,&apos;luo&apos;]</div><div class="line">&gt;&gt;&gt; del name[1] #直接删除列表的&apos;luo&apos;这个元素</div><div class="line">&gt;&gt;&gt; name</div><div class="line">[&apos;Clef&apos;]</div></pre></td></tr></table></figure></p>
+<h5 id="3-分片赋值"><a href="#3-分片赋值" class="headerlink" title="3 分片赋值"></a>3 分片赋值</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; name=list(&apos;Perl&apos;)</div><div class="line">&gt;&gt;&gt; name</div><div class="line">[&apos;P&apos;, &apos;e&apos;, &apos;r&apos;, &apos;l&apos;]</div><div class="line">&gt;&gt;&gt; name[2:]=list(&apos;ar&apos;) #对name指定序号为2和以后的进行赋值</div><div class="line">&gt;&gt;&gt; name</div><div class="line">[&apos;P&apos;, &apos;e&apos;, &apos;a&apos;, &apos;r&apos;]</div><div class="line">&gt;&gt;&gt; numbers=[1,5]</div><div class="line">&gt;&gt;&gt; numbers</div><div class="line">[1, 5]</div><div class="line">&gt;&gt;&gt; numbers[1:1]=[2,3,4] #直接插入新的列表元素</div><div class="line">&gt;&gt;&gt; numbers</div><div class="line">[1, 2, 3, 4, 5]</div><div class="line">&gt;&gt;&gt; numbers[1:4]=[] #指定删除相应的列表元素，和上面del语句效果一样的</div><div class="line">&gt;&gt;&gt; numbers</div><div class="line">[1, 5]</div><div class="line"></div><div class="line">&gt;&gt;&gt; name=list(&apos;Perl&apos;) #初始化列表name</div><div class="line">&gt;&gt;&gt; name1=name #直接赋值，表明name和name1同时引用一个列表</div><div class="line">&gt;&gt;&gt; name2=name[:] #把整个列表切片后再赋值，将会得到一个列表的副本，name2和name并不是指向同一个列表</div><div class="line">&gt;&gt;&gt; name[2]=&apos;x&apos;#修改列表name的值</div><div class="line">&gt;&gt;&gt; name</div><div class="line">[&apos;P&apos;, &apos;e&apos;, &apos;x&apos;, &apos;l&apos;]</div><div class="line">&gt;&gt;&gt; name1 #name1同时一起被修改了</div><div class="line">[&apos;P&apos;, &apos;e&apos;, &apos;x&apos;, &apos;l&apos;]</div><div class="line">&gt;&gt;&gt; name2 #但是name2并没有同时一起被修改</div><div class="line">[&apos;P&apos;, &apos;e&apos;, &apos;r&apos;, &apos;l&apos;]</div></pre></td></tr></table></figure>
+<h3 id="2-3-2-列表的方法"><a href="#2-3-2-列表的方法" class="headerlink" title="2.3.2 列表的方法"></a>2.3.2 列表的方法</h3><h4 id="1-append"><a href="#1-append" class="headerlink" title="1.append"></a>1.append</h4><p>用于在列表末尾追加新的对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; numbers=[1,2,3]</div><div class="line">&gt;&gt;&gt; numbers.append(4) #直接追加新的列表元素</div><div class="line">&gt;&gt;&gt; numbers</div><div class="line">[1, 2, 3, 4]</div></pre></td></tr></table></figure></p>
+<h4 id="2-count"><a href="#2-count" class="headerlink" title="2.count"></a>2.count</h4><p>统计某个元素在列表中出现的次数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; numbers=[1,2,1,2,3,4,2]</div><div class="line">&gt;&gt;&gt; numbers.count(2) #统计列表元素&apos;2&apos;出现的次数</div><div class="line">3</div></pre></td></tr></table></figure></p>
+<h4 id="3-extend"><a href="#3-extend" class="headerlink" title="3.extend"></a>3.extend</h4><p>可以在列表的末尾一次性追加另一个序列中的多个值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; a=[1,2,3]</div><div class="line">&gt;&gt;&gt; b=[4,5,6]</div><div class="line">&gt;&gt;&gt; a.extend(b)</div><div class="line">&gt;&gt;&gt; a</div><div class="line">[1, 2, 3, 4, 5, 6]</div><div class="line"></div><div class="line">也可以用分赋值实现</div><div class="line">a[len(a):]=b</div></pre></td></tr></table></figure></p>
+<p>extend修改了原来表的结构，而直接用序列的相加则没有修改原来序列的值</p>
+<h4 id="4-index"><a href="#4-index" class="headerlink" title="4.index"></a>4.index</h4><p>找出某个值第一个匹配项的索引位置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; numbers</div><div class="line">[1, 2, 1, 2, 3, 4, 2]</div><div class="line">&gt;&gt;&gt; numbers.index(2)</div><div class="line">1</div></pre></td></tr></table></figure></p>
+<h4 id="5-insert"><a href="#5-insert" class="headerlink" title="5.insert"></a>5.insert</h4><p>将对象插入到列表当中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; numbers</div><div class="line">[1, 2, 1, 2, 3, 4, 2]</div><div class="line">&gt;&gt;&gt; numbers.insert(2,&apos;inserting&apos;) #指定序号为2的地方插入&apos;inserting&apos;</div><div class="line">&gt;&gt;&gt; numbers</div><div class="line">[1, 2, &apos;inserting&apos;, 1, 2, 3, 4, 2]</div></pre></td></tr></table></figure></p>
+<h4 id="6-pop"><a href="#6-pop" class="headerlink" title="6.pop"></a>6.pop</h4><p>移除列表中的一个元素(默认是最后一个)，并且返回该元素的值，该方法是唯一一个既能修改列表又返回元素值(除None)的列表方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; x=[1,2,3]</div><div class="line">&gt;&gt;&gt; x.pop()#移除最后一个元素</div><div class="line">&gt;&gt;&gt; x</div><div class="line">[1, 2]</div></pre></td></tr></table></figure></p>
+<p>可以和append搭配使用，实现栈的功能<br>想实现堆的功能可以和insert搭配使用  </p>
+<h4 id="7-remove"><a href="#7-remove" class="headerlink" title="7.remove"></a>7.remove</h4><p>移除列表中某个值的==第一个匹配项==</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; x=[1,2,3,2,4,5]</div><div class="line">&gt;&gt;&gt; x.remove(2) #只移除了列表中的第一个匹配到&apos;2&apos;的元素</div><div class="line">&gt;&gt;&gt; x</div><div class="line">[1, 3, 2, 4, 5]</div></pre></td></tr></table></figure>
+<h4 id="8-reverse"><a href="#8-reverse" class="headerlink" title="8.reverse"></a>8.reverse</h4><p>将列表中的元素反向存放<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; x=[1,2,3,4,5]</div><div class="line">&gt;&gt;&gt; x.reverse()</div><div class="line">&gt;&gt;&gt; x</div><div class="line">[5, 4, 3, 2, 1]</div></pre></td></tr></table></figure></p>
+<p><strong>该方法不返回值</strong><br>如果需要对有一个列表反向迭代，可以采用reversed函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;a=list(reversed(x))</div><div class="line">&gt;&gt;&gt;a</div><div class="line">[5, 4, 3, 2, 1]</div></pre></td></tr></table></figure></p>
+<h4 id="9-sort"><a href="#9-sort" class="headerlink" title="9.sort"></a>9.sort</h4><p>对原列表进行排序，并返回空值,不返回值的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; x=[4,2,3,5,1]</div><div class="line">&gt;&gt;&gt; y=x.sort() #对列表x进行排序，并把返回值赋给y</div><div class="line">&gt;&gt;&gt; x #x列表已经排序</div><div class="line">[1, 2, 3, 4, 5]</div><div class="line">&gt;&gt;&gt; y #y为空，印证了上面说的，sort方法返回空值</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>可以将x先赋值给y<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; x=[4,2,3,5,1]</div><div class="line">&gt;&gt;&gt;y=x[:]</div><div class="line">&gt;&gt;&gt;y.sort()</div><div class="line">&gt;&gt;&gt;x</div><div class="line">[4,2,3,5,1]</div><div class="line">&gt;&gt;&gt;y</div><div class="line">[1, 2, 3, 4, 5]</div><div class="line"></div><div class="line">y=x</div><div class="line">y.sort</div><div class="line">&gt;&gt;&gt;x</div><div class="line">[1, 2, 3, 4, 5]</div><div class="line">&gt;&gt;&gt;y</div><div class="line">[1, 2, 3, 4, 5]</div><div class="line"></div><div class="line">#也可以直接使用sorted函数</div><div class="line">y= sorted(x)</div></pre></td></tr></table></figure></p>
+<h4 id="10-高级排序"><a href="#10-高级排序" class="headerlink" title="10.高级排序"></a>10.高级排序</h4><p>key、reverse还是可以作为sort方法的参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; x=[&apos;abc&apos;,&apos;ab&apos;,&apos;abcd&apos;,&apos;a&apos;]</div><div class="line">&gt;&gt;&gt; x.sort(key=len)  #根据元素的长度</div><div class="line">&gt;&gt;&gt; x</div><div class="line">[&apos;a&apos;, &apos;ab&apos;, &apos;abc&apos;, &apos;abcd&apos;]</div><div class="line">&gt;&gt;&gt; x=[5,2,9,7]</div><div class="line">&gt;&gt;&gt; x.sort(reverse=True) # True 方向排序</div><div class="line">&gt;&gt;&gt; x</div><div class="line">[9, 7, 5, 2]</div></pre></td></tr></table></figure></p>
+<h2 id="2-4-元组-不可变序列"><a href="#2-4-元组-不可变序列" class="headerlink" title="2.4 元组 不可变序列"></a>2.4 元组 不可变序列</h2><p><strong>元组</strong>：与列表一样，也是一种序列，唯一的不同就是元组不能修改。创建元组很简单，用逗号隔开一些值，就自动创建了元组，元组大部分的时候是通过圆括号括起来的。<br>元组只有一个值的时候必须加逗号<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 3, #注意要加一个逗号，才能实现是元组</div><div class="line">(3,)</div><div class="line">&gt;&gt;&gt; () #空元组，不包含任何元素</div><div class="line">()</div></pre></td></tr></table></figure></p>
+<p>tuple函数：<br>功能与list函数基本上是一样的，以一个序列作为参数并把它转换为元组，如果参数是元组，那么就会原样返回该元组.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; tuple([1,2,3]) #参数是列表，就转换为元组</div><div class="line">(1, 2, 3)</div><div class="line">&gt;&gt;&gt; tuple(&apos;abc&apos;) #与list函数用法一样</div><div class="line">(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;)</div><div class="line">&gt;&gt;&gt; tuple((&apos;a&apos;,&apos;b&apos;,&apos;c&apos;)) #参数为元组，就返回原元组，字符要加引号</div><div class="line">(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;)</div></pre></td></tr></table></figure>
+<p><strong>元组意义 </strong></p>
+<ol>
+<li>元组在映射中当作键使用，而列表不行</li>
+<li>元组作为很多内建函数和方法的返回值，也就是说必须对元组进行处理。</li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/study/" rel="tag"># study</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/28/Oracle/" rel="next" title="Oracle学习">
+                <i class="fa fa-chevron-left"></i> Oracle学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/17/python学习笔记2/" rel="prev" title="python学习笔记2">
+                python学习笔记2 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="John Doe" />
+          <p class="site-author-name" itemprop="name">John Doe</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">1.</span> <span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-基础知识"><span class="nav-number">1.1.</span> <span class="nav-text">第一章 基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-基本运算符"><span class="nav-number">1.2.</span> <span class="nav-text">1.1 基本运算符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-列表和元组"><span class="nav-number">2.</span> <span class="nav-text">2 列表和元组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-序列概述"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 序列概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2通用序列操作"><span class="nav-number">2.2.</span> <span class="nav-text">2.2通用序列操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1索引"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.2.1索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-分片"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2.2 分片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3-序列相加"><span class="nav-number">2.2.3.</span> <span class="nav-text">2.2.3 序列相加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-4乘法"><span class="nav-number">2.2.4.</span> <span class="nav-text">2.2.4乘法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-5成员资格"><span class="nav-number">2.2.5.</span> <span class="nav-text">2.2.5成员资格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-6-长度，最小值，最大值"><span class="nav-number">2.2.6.</span> <span class="nav-text">2.2.6 长度，最小值，最大值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-列表"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1-list函数"><span class="nav-number">2.3.1.</span> <span class="nav-text">2.3.1 list函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2-基本的列表操作"><span class="nav-number">2.3.2.</span> <span class="nav-text">2.3.2 基本的列表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-元素赋值"><span class="nav-number">2.3.2.0.1.</span> <span class="nav-text">1 元素赋值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-删除元素"><span class="nav-number">2.3.2.0.2.</span> <span class="nav-text">2 删除元素</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-分片赋值"><span class="nav-number">2.3.2.0.3.</span> <span class="nav-text">3 分片赋值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2-列表的方法"><span class="nav-number">2.3.3.</span> <span class="nav-text">2.3.2 列表的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-append"><span class="nav-number">2.3.3.1.</span> <span class="nav-text">1.append</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-count"><span class="nav-number">2.3.3.2.</span> <span class="nav-text">2.count</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-extend"><span class="nav-number">2.3.3.3.</span> <span class="nav-text">3.extend</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-index"><span class="nav-number">2.3.3.4.</span> <span class="nav-text">4.index</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-insert"><span class="nav-number">2.3.3.5.</span> <span class="nav-text">5.insert</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-pop"><span class="nav-number">2.3.3.6.</span> <span class="nav-text">6.pop</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-remove"><span class="nav-number">2.3.3.7.</span> <span class="nav-text">7.remove</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-reverse"><span class="nav-number">2.3.3.8.</span> <span class="nav-text">8.reverse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-sort"><span class="nav-number">2.3.3.9.</span> <span class="nav-text">9.sort</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-高级排序"><span class="nav-number">2.3.3.10.</span> <span class="nav-text">10.高级排序</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-元组-不可变序列"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 元组 不可变序列</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://yuanleiuestc.github.io/2017/08/16/python-学习笔记1/';
+          this.page.identifier = '2017/08/16/python-学习笔记1/';
+          this.page.title = 'python 学习笔记1';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
