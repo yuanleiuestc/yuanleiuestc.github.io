@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-CN.yml">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,12 +93,15 @@
 
 
 
+<meta name="description" content="知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="磊の博客">
 <meta property="og:url" content="https://yuanleiuestc.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="磊の博客">
+<meta property="og:description" content="知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="磊の博客">
+<meta name="twitter:description" content="知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。">
 
 
 
@@ -132,7 +135,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>磊の博客</title>
   
 
 
@@ -150,7 +153,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN.yml">
 
   
   
@@ -170,12 +173,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">磊の博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">每天成长一点!</p>
       
   </div>
 
@@ -200,7 +203,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -210,7 +213,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -253,16 +256,1216 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/08/18/python学习笔记3/">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2018/02/22/设计模式学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="yuanlei">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/22/设计模式学习笔记/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-22T08:44:58+08:00">
+                2018-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/22/设计模式学习笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/02/22/设计模式学习笔记/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>创建型模式：<br>工厂模式，抽象工厂模式，单例模式，构建者模式，原型模式。</p>
+<h2 id="1-工厂模式"><a href="#1-工厂模式" class="headerlink" title="1 工厂模式:"></a>1 工厂模式:</h2><p>普通工厂模式：<br>定义：建立一个工厂类，实现了同一接口的一些类的实例创建。<br>通过传递不同的字符标识，返回不同的类。</p>
+<p>多个工厂方法模式： 对普通工程模式进行改进，通过调用不同的方法名，实现对不同类的创建。</p>
+<p>静态工厂方法模式： 将创建类的方法加static关键字，从而不需要创建实例，直接调用方法，实现类的创建。</p>
+<h2 id="2-抽象工厂模式"><a href="#2-抽象工厂模式" class="headerlink" title="2 抽象工厂模式"></a>2 抽象工厂模式</h2><p> 类的创建依赖与工厂类，如果想要扩展，则需要对工厂类进行修改，违背了闭包原则。<br> 写一个抽象工厂类，</p>
+<h2 id="3-单例模式"><a href="#3-单例模式" class="headerlink" title="3.单例模式"></a>3.单例模式</h2><p>保证在一个JVM中，该对象只存在一个实例。<br> 定义：一个类只有一个实例。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"> public class Singleton &#123;</div><div class="line">    private static class Holder &#123;</div><div class="line">        private static Singleton singleton = new Singleton();</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    private Singleton()&#123;&#125;</div><div class="line"> </div><div class="line">    public static Singleton getSingleton()&#123;</div><div class="line">        return Holder.singleton;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">public enum Singleton &#123;</div><div class="line">    INSTANCE；</div><div class="line">    private String name;</div><div class="line">    public String getName()&#123;</div><div class="line">        return name;</div><div class="line">    &#125;</div><div class="line">    public void setName(String name)&#123;</div><div class="line">        this.name = name;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="4-建造者模式"><a href="#4-建造者模式" class="headerlink" title="4.建造者模式"></a>4.建造者模式</h2><p>定义：是将一个复杂的对象的<strong>构建</strong>与它的<strong>表示</strong>分离，使得同样的构建过程可以创建不同的表示。</p>
+<p>建造者模式的使用场景：</p>
+<p>（1）当产品有复杂的内部构造时（参数很多）。<br>（2）需要生产的产品的属性相互依赖，这些属性的赋值顺序比较重要时（因为在调用ConcreteBuilder的赋值方法时是有先后顺序的）。</p>
+<h2 id="5-原型模式"><a href="#5-原型模式" class="headerlink" title="5.原型模式"></a>5.原型模式</h2><p>　<strong>原型模式</strong>：使用原型实例指定待创建对象的类型，并且通过复制这个原型来创建新的对象。<br>原型模式的适用环境：</p>
+<p>　　1：创建新对象成本较大（例如初始化时间长，占用CPU多或占太多网络资源），新对象可以通过复制已有对象来获得，如果相似对象，则可以对其成员变量稍作修改。</p>
+<p>　　2：系统要保存对象的状态，而对象的状态很小。</p>
+<p>　　3：需要避免使用分层次的工厂类来创建分层次的对象，并且类的实例对象只有一个或很少的组合状态，通过复制原型对象得到新实例可以比使用构造函数创建一个新实例更加方便。</p>
+<p><strong>结构型模式</strong></p>
+<h2 id="6适配器模式"><a href="#6适配器模式" class="headerlink" title="6适配器模式"></a>6适配器模式</h2><p>定义：将某个类的接口转换成客户端期望的另一个接口表示，目的是消除由于接口不匹配所造成的类的兼容性问题。主要分为三类：类的适配器模式、对象的适配器模式、接口的适配器模式。</p>
+<p>类适配器模式：继承目标类，并实现目标接口。</p>
+<pre>
+// 已存在的、具有特殊功能，但不符合我们既有的标准接口的类
+class Adaptee {
+    public void specificRequest() {
+        System.out.println("被适配的类，该类具有特殊功能");
+    }
+}
+
+// 目标接口
+interface Target {
+    public void request();
+}
+
+// 具体目标类，只提供普通功能
+class ConcreteTarget implements Target {
+    public void request() {
+        System.out.println("普通类，该类具有普通功能");
+    }
+}
+
+// 适配器类，继承了被适配类，同时实现标准接口
+class Adapter extends Adaptee implements Target{
+    public void request() {
+        super.specificRequest();
+    }
+}
+
+//测试类
+// 使用普通功能类
+Target concreteTarget = new ConcreteTarget();
+concreteTarget.request();   //输出“普通类，该类具有普通功能”
+
+// 使用特殊功能类，即适配类
+Target adapter = new Adapter();
+adapter.request();     //输出“被适配的类，该类具有特殊功能”
+</pre>
+
+<p>对象适配器模式：只实现标准接口，再在内部维护被适配类的引用的方式。<br>接口适配器：<br>当不希望实现一个接口中所有的方法时，可以创建一个抽象类Wrapper，实现所有方法，我们写别的类的时候，继承抽象类即可</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2018/01/17/java学习笔记 异常处理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/17/java学习笔记 异常处理/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-17T11:11:58+08:00">
+                2018-01-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/17/java学习笔记 异常处理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/17/java学习笔记 异常处理/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">try&#123;&#125;</div><div class="line">catch()&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>#String </p>
+<h2 id="String是不可变的，每次都会复制一个新的副本。"><a href="#String是不可变的，每次都会复制一个新的副本。" class="headerlink" title="String是不可变的，每次都会复制一个新的副本。"></a>String是不可变的，每次都会复制一个新的副本。</h2><p>String StringBuilder StringBuffer<br>对于三者使用的总结： 1.如果要操作少量的数据用 = String</p>
+<p>　　　　　　　　　　              2.单线程操作字符串缓冲区 下操作大量数据 = StringBuilder</p>
+<p>　　　　　　　　　　              3.多线程操作字符串缓冲区 下操作大量数据 = StringBuffer</p>
+<h1 id="字符串的格式化输出"><a href="#字符串的格式化输出" class="headerlink" title="字符串的格式化输出"></a>字符串的格式化输出</h1><pre><code>String.format();    
+</code></pre><h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><pre><code>a.split(regex);
+a.replaceAll(regex, replacement);
+a.matches(regex)
+</code></pre><p>#</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2018/01/15/java学习笔记 对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/15/java学习笔记 对象/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-15T16:56:37+08:00">
+                2018-01-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/15/java学习笔记 对象/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/15/java学习笔记 对象/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><p>COllection 一种存放一组对象的方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">package com.yuan.holding;</div><div class="line"></div><div class="line">import java.util.ArrayList;</div><div class="line">import java.util.Collection;</div><div class="line"></div><div class="line">public class SimpleCollection &#123;</div><div class="line">public static void main(String args[])&#123;</div><div class="line">	Collection&lt;Integer&gt; c= new  ArrayList&lt;Integer&gt;();</div><div class="line">	for(int i=0;i&lt;10;i++)&#123;</div><div class="line">		c.add(i);</div><div class="line">	&#125;</div><div class="line">	for(Integer i :c)&#123;</div><div class="line">		System.out.println(i+&quot; &quot;);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>#添加一组元素：<br>Arrays.aslist()<br>Collections.addAll();</p>
+<h1 id="容器的打印"><a href="#容器的打印" class="headerlink" title="容器的打印"></a>容器的打印</h1><p>list : ArrayList LinkedList<br>MAP:HashMap,TreeMap,LinkedHashMap<br>Set: HashSet,TreeSet,LinkedHashSet</p>
+<h1 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h1><p>Linkedlist实现了队列和堆栈的接口。</p>
+<p>#迭代器<br>Iterator<br>hasNext()检查序列中是否还有元素<br>next() 获得序列的下一个元素<br>ListIterator 可以双向异动。</p>
+<h1 id="set"><a href="#set" class="headerlink" title="set"></a>set</h1><p>集合，HashMap(散列表),TreeMap(红黑树),LinkedHashMap<br>保存不重复的元素。Set是接口</p>
+<h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><h1 id="QUEUE"><a href="#QUEUE" class="headerlink" title="QUEUE"></a>QUEUE</h1><h1 id="iterable"><a href="#iterable" class="headerlink" title="iterable"></a>iterable</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">package com.yuan.holding;</div><div class="line"></div><div class="line">import java.util.ArrayList;</div><div class="line">import java.util.Arrays;</div><div class="line">import java.util.Collection;</div><div class="line">import java.util.Iterator;</div><div class="line"></div><div class="line">class ReversibleArrayList&lt;T&gt; extends ArrayList&lt;T&gt;&#123;</div><div class="line">	public ReversibleArrayList(Collection&lt;T&gt; c)&#123;super(c);&#125;</div><div class="line">	public Iterable&lt;T&gt; reversed()&#123;</div><div class="line">		return new Iterable&lt;T&gt;()&#123;</div><div class="line">			public Iterator&lt;T&gt; iterator()&#123;</div><div class="line">				return  new Iterator&lt;T&gt;()&#123;</div><div class="line">					int current = size()-1;</div><div class="line">					public boolean hasNext()&#123;return current&gt;-1;&#125;</div><div class="line">					public T next()&#123;return get(current--);&#125;</div><div class="line">					public void remove()&#123;</div><div class="line">						throw new UnsupportedOperationException();</div><div class="line">					&#125;</div><div class="line">				&#125;;</div><div class="line">			&#125;</div><div class="line">			&#125;;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">public class AdapterMethodIdiom &#123;</div><div class="line"></div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">ReversibleArrayList&lt;String&gt; ral = new ReversibleArrayList&lt;String&gt;(Arrays.asList((&quot;To be or not to be&quot;).split(&quot; &quot;)));</div><div class="line">for(String s:  ral)&#123;</div><div class="line">	System.out.print(s+&quot; &quot;);</div><div class="line">&#125;</div><div class="line">for(String s1 :ral.reversed())&#123;</div><div class="line">	System.out.print(s1+&quot; &quot;);</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2018/01/11/面试题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/11/面试题/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-11T17:37:03+08:00">
+                2018-01-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/11/面试题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/11/面试题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>36.Java堆的结构是什么样子的？什么是堆中的永久代(Perm Gen space)?<br>java的堆是存放是对象。永生代，出生代和老年代。</p>
+<p>37.串行(serial)收集器和吞吐量(throughput)收集器的区别是什么？<br>串行收集器在GC时会停止其他所有工作线程（stop-the-world），CPU利用率是最高的，所以适用于要求高吞吐量（throughput）的应用，但停顿时间（pause time）会比较长，所以对web应用来说就不适合，因为这意味着用户等待时间会加长。而并行收集器可以理解是多线程串行收集，在串行收集基础上采用多线程方式进行GC，很好的弥补了串行收集的不足，可以大幅缩短停顿时间（如下图表示的停顿时长高度，并发比并行要短），因此对于空间不大的区域（如young generation），采用并行收集器停顿时间很短，回收效率高，适合高频率执行。</p>
+<p>38在Java中，对象什么时候可以被垃圾回收？<br>不存在对当前对象的引用时会出现垃圾回收 正在开始时候：1.内存满的时候2空闲的时候，java虚拟机决定。。<br>39.JVM的永久代中会发生垃圾回收么？<br>垃圾回收不会发生在永久代，如果永久代满了或超出了临界值，会触发jvm的完全垃圾回收  </p>
+<p>40.Java中的两种异常类型是什么？他们有什么区别？<br>java的异常分类Error和Execption,异常又分为运行时异常和检测异常。<br>41.Java中Exception和Error有什么区别？<br>Exception和Error都是Throwable的子类。Exception用于用户程序可以捕获的异常情况。Error定义了不期望被用户程序捕获的异常。</p>
+<p>42.throw和throws有什么区别？<br>1.所在位置不同：<br>throw语句用在方法体内，表示抛出异常，由方法体内的语句处理。<br>throws语句用在方法声明后面，表示再抛出异常，由该方法的调用者来处理。<br>2.动作不同<br>throws主要是声明这个方法会抛出这种类型的异常，使它的调用者知道要捕获这个异常。<br>throw是具体向外抛异常的动作，所以它是抛出一个异常实例。</p>
+<p>throws说明你有那个可能，倾向。<br>throw的话，那就是你把那个倾向变成真实的了。</p>
+<p>同时：<br>1、throws出现在方法函数头；而throw出现在函数体。<br>2、throws表示出现异常的一种可能性，并不一定会发生这些异常；throw则是抛出了异常，执行throw则一定抛出了某种异常。<br>3、两者都是消极处理异常的方式（这里的消极并不是说这种方式不好），只是抛出或者可能抛出异常，但是不会由函数去处理异常，真正的处理异常由函数的上层调用处理。</p>
+<p>43.异常处理完成后，Exception对象会发生什么变化？ </p>
+<p>Exception对象会在下一次垃圾回收过程中被回收掉。</p>
+<p>44.finally代码块和finalize()方法有什么区别？</p>
+<p>无论是否抛出异常，finally代码块都会执行，它主要是用来释放应用占用的资源。finalize()方法是Object类的一个protected方法，它是在对象被垃圾回收之前由Java虚拟机来调用的。</p>
+<p>45.什么是Applet？</p>
+<p>Java应用小程序，可以直接嵌入到网页中，并能够产生特殊的效果，applet经编译后会产生.class文件，把.class文件嵌入到html页面中，用户在链接网页时，applet便会伴随网页一起下载到用户计算机运行。<br>applet主要用来创建动态交互的web应用程序。</p>
+<p>46.什么是JDBC？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">JDBC（Java DataBase Connectivity）,是一套面向对象的应用程序接口（API），制定了统一的访问各类关系数据库的标准接口，为各个数据库厂商提供了标准的实现。通过JDBC技术，开发人员可以用纯Java语言和标准的SQL语句编写完整的数据库应用程序，并且真正地实现了软件的跨平台性。</div><div class="line">通常情况下使用JDBC完成以下操作：</div><div class="line">1.同数据库建立连接；</div><div class="line">2.向数据库发送SQL语句；</div><div class="line">3.处理从数据库返回的结果；</div><div class="line">JDBC具有下列优点：</div><div class="line">1.JDBC与ODBC(Open Database Connectivity，即开放数据库互连）十分相似，便于软件开发人员理解；</div><div class="line">2.JDBC使软件开发人员从复杂的驱动程序编写工作中解脱出来，可以完全专注于业务逻辑开发；</div><div class="line">3.JDBC支持多种关系型数据库，大大增加了软件的可移植性；</div><div class="line">4.JDBC API是面向对象的，软件开发人员可以将常用的方法进行二次封装，从而提高代码的重用性；</div></pre></td></tr></table></figure></p>
+<p>47.Class.forName()方法有什么作用？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">以通过这个来动态加载类。反射。</div></pre></td></tr></table></figure></p>
+<p>48.PreparedStatement比Statement有什么优势？</p>
+<pre><code>PreparedStatements是预编译的，PreparedStatements实例包涵已编译的sql语句，所以其执行呢速度要快于statement对象。
+PreparedStatements作为statement的子类，继承了statement的所有方法，三种方法，excute,excuteQuery和excuteUpdate已被更改以使之不再需要参数。
+PreparedStatements的代码可读性，可维护性强于statement.
+极大的提高了安全性
+</code></pre><p>49.什么时候使用CallableStatement？用来准备CallableStatement的方法是什么？<br>    CallableStatement用来执行存储过程，存储过程是数据库存储和提供的，存储过程可以接受输入参数，也可以有返回结果。<br>50.数据库连接池是什么意思？<br>    像打开关闭数据库连接这种和数据库的交互可能是很费时的，尤其是当客户端数量增加的时候，会消耗大量的资源，成本是非常高的。可以在应用服务器启动的时候建立很多个数据库连接并维护在一个池中。连接请求由池中的连接提供。在连接使用完毕以后，把连接归还到池中，以用于满足将来更多的请求。<br>51.解释下Serialization和Deserialization。<br>    Java提供了一种叫做对象序列化的机制，他把对象表示成一连串的字节，里面包含了对象的数据，对象的类型信息，对象内部的数据的类型信息等等。因此，序列化可以看成是为了把对象存储在磁盘上或者是从磁盘上读出来并重建对象而把对象扁平化的一种方式。反序列化是把对象从扁平状态转化成活动对象的相反的步骤。</p>
+<p>52.什么是Servlet？<br>servlet是基于java语言的web服务器端编程技术，是sun提供的一种实现动态网页的解决方案。servlet是运行在servlet容器中的java类，它能处理客户端的http请求并产生http响应</p>
+<p>53.说一下Servlet的体系结构。<br><a href="http://blog.csdn.net/robinjwong/article/details/17700011" target="_blank" rel="external">http://blog.csdn.net/robinjwong/article/details/17700011</a></p>
+<p>54.解释下Servlet的生命周期。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Servlet程序是由WEB服务器调用，web服务器收到客户端的Servlet访问请求后：</div><div class="line">①Web服务器首先检查是否已经装载并创建了该Servlet的实例对象。如果是，则直接执行第④步，否则，执行第②步。 </div><div class="line">②装载并创建该Servlet的一个实例对象。  </div><div class="line">③调用Servlet实例对象的init()方法。 </div><div class="line">④创建一个用于封装HTTP请求消息的HttpServletRequest对象和一个代表HTTP响应消息的HttpServletResponse对象，然后调用Servlet的service()方法并将请求和响应对象作为参数传递进去。 </div><div class="line">⑤WEB应用程序被停止或重新启动之前，Servlet引擎将卸载Servlet，并在卸载之前调用Servlet的destroy()方法。</div></pre></td></tr></table></figure>
+<p>55.doGet()方法和doPost()方法有什么区别？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">doGet：GET方法会把名值对追加在请求的URL后面。因为URL对字符数目有限制，进而限制了用在客户端请求的参数值的数目。并且请求中的参数值是可见的，因此，敏感信息不能用这种方式传递。速度快，适合查询，安全性低</div><div class="line">doPOST：POST方法通过把请求参数值放在请求体中来克服GET方法的限制，因此，可以发送的参数的数目是没有限制的。最后，通过POST请求传递的敏感信息对外部客户端是不可见的。安全性高。</div></pre></td></tr></table></figure></p>
+<p>56.什么是cookie？session和cookie有什么区别？</p>
+<p>cookie实际上是一小段的文本信息。客户端请求服务器，如果服务器需要记录该用户的状态，就使用response向客户端浏览器颁发一个cookie。客户端浏览器会把cookie保存起来。当浏览器再次请求该网站时，浏览器就会把请求地址和cookie一同给服务器。服务器检查该cookie，从而判断用户的状态。服务器还可以根据需要修改cookie的内容。 session是另一种记录客户状态的机制。不同的是cookie保存在客户端浏览器中，而session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上，这就是session。客户端浏览器再次访问时只需要从该session中查找该客户的状态就可以了。 如果说cookie机制是通过检查客户身上的“通信证”，那么session机制就是通过检查服务器上的“客户明细表”来确认客户身份。</p>
+<p>57 浏览器和Servlet通信使用的是什么协议？<br>浏览器和Servlet通信使用的是HTTP协议。</p>
+<p>58什么是URL编码和URL解码？</p>
+<p>URL编码是负责把URL里面的空格和其他的特殊字符替换成对应的十六进制表示，反之就是解码。</p>
+<p>59.JSP有什么优点？<br>JSP页面是被动态编译成Servlet的，因此，开发者可以很容易的更新展现代码。<br>JSP页面可以被预编译。<br>JSP页面可以很容易的和静态模板结合，包括：HTML或者XML，也可以很容易的和产生动态内容的代码结合起来。<br>开发者可以提供让页面设计者以类XML格式来访问的自定义的JSP标签库。<br>开发者可以在组件层做逻辑上的改变，而不需要编辑单独使用了应用层逻辑的页面。</p>
+<p>60.隐含对象是什么意思？有哪些隐含对象？</p>
+<p>JSP隐含对象是页面中的一些Java对象，JSP容器让这些Java对象可以为开发者所使用。开发者不用明确的声明就可以直接使用他们。JSP隐含对象也叫做预定义变量。下面列出了JSP页面中的隐含对象：<br>application<br>page<br>request<br>response<br>session<br>exception<br>out<br>config<br>pageContext</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2018/01/10/内部类-md/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/10/内部类-md/" itemprop="url">内部类.md</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-10T18:52:42+08:00">
+                2018-01-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/10/内部类-md/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/10/内部类-md/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#内部类<br>将一个类定义在另一个类的中。</p>
+<h1 id="10-3-使用-this和-new"><a href="#10-3-使用-this和-new" class="headerlink" title="10.3 使用.this和.new"></a>10.3 使用.this和.new</h1><p>.this 使内部类生成外部类的引用。<br>.new 去创建一个内部类的对象。</p>
+<h1 id="10-5在方法和作用域里的内部类"><a href="#10-5在方法和作用域里的内部类" class="headerlink" title="10.5在方法和作用域里的内部类"></a>10.5在方法和作用域里的内部类</h1><p>目的：1.实现某个类型的接口，可以创建并返回对其的引用。<br>2.解决一个复杂问题，想创建一个类来辅助你解决问题。<br>在方法体类使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">package com.yuan.innerclasses;</div><div class="line"></div><div class="line">public class Parcel5 &#123;</div><div class="line">public Destination destination(String s)&#123;</div><div class="line">	class PDsestination implements Destination&#123; //内部类</div><div class="line">		private String label;</div><div class="line">		</div><div class="line">		private PDsestination (String whereTo)&#123;</div><div class="line">			label= whereTo;</div><div class="line">		&#125;</div><div class="line">		@Override</div><div class="line">		public String readLabel() &#123;</div><div class="line">			// TODO Auto-generated method stub</div><div class="line">			return label;</div><div class="line">		&#125;	</div><div class="line">	&#125;</div><div class="line">	return new PDsestination(s);</div><div class="line">&#125;</div><div class="line">public static void main(String args[])&#123;</div><div class="line">	Parcel5 p = new Parcel5();</div><div class="line">	Destination d = p.destination(&quot;Tasmania&quot;);</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>在作用域内嵌入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">package com.yuan.innerclasses;</div><div class="line"></div><div class="line">public class Parcel6 &#123;</div><div class="line">private void internalTracking(boolean b)&#123;</div><div class="line">	if(b)&#123;</div><div class="line">		class TrackSlip&#123;</div><div class="line">			private String id;</div><div class="line">			TrackSlip(String s)&#123;</div><div class="line">				id=s;</div><div class="line">			&#125;</div><div class="line">			String getSlip()&#123;</div><div class="line">				return id;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		TrackSlip ts = new TrackSlip(&quot;slip&quot;);</div><div class="line">		String s = ts.getSlip();&#125;</div><div class="line">	&#125;</div><div class="line">public void track()&#123;</div><div class="line">	internalTracking(true);</div><div class="line">&#125;</div><div class="line">public static void main(String args[])&#123;</div><div class="line">	Parcel6 p = new Parcel6();</div><div class="line">	p.track();</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="10-6匿名内部类"><a href="#10-6匿名内部类" class="headerlink" title="10.6匿名内部类"></a>10.6匿名内部类</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">package com.yuan.innerclasses;</div><div class="line"></div><div class="line">public class Parcel10 &#123;</div><div class="line">	public Destination destination(final String dest,final float price)&#123;//必须是final，才能被内部类使用。</div><div class="line">		return new Destination()&#123;</div><div class="line">			private int cost;</div><div class="line">			&#123;</div><div class="line">				cost = Math.round(price);</div><div class="line">				if(cost&gt;100)</div><div class="line">					System.out.println(&quot;Over budget&quot;);</div><div class="line">			&#125;</div><div class="line">			private String label;</div><div class="line">			public String readLabel() &#123;</div><div class="line">				// TODO Auto-generated method stub</div><div class="line">				return label;</div><div class="line">			&#125;	</div><div class="line">		&#125;;</div><div class="line">	&#125;</div><div class="line">	public static void main(String args[])&#123;</div><div class="line">		Parcel10 p = new Parcel10();</div><div class="line">		Destination d = p.destination(&quot;Tasmania&quot;,121.2f);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">`</div></pre></td></tr></table></figure>
+<h1 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">package com.yuan.innerclasses;</div><div class="line"></div><div class="line">interface Game&#123;void play();&#125;</div><div class="line">interface GameService &#123;Game getGame();&#125;</div><div class="line"></div><div class="line">class Check implements  Game&#123;</div><div class="line">	private Check()&#123;&#125;;</div><div class="line">	public void play()&#123;</div><div class="line">		System.out.println(&quot;PlayCheck&quot;);</div><div class="line">	&#125;</div><div class="line">	static GameService gs = new GameService()&#123;</div><div class="line">	public Game getGame()&#123;</div><div class="line">		return new Check();</div><div class="line">	&#125;</div><div class="line">&#125;;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">class Chess implements  Game&#123;</div><div class="line">	private Chess()&#123;&#125;;</div><div class="line">	public void play()&#123;</div><div class="line">		System.out.println(&quot;PlayChess&quot;);</div><div class="line">	&#125;</div><div class="line">static GameService gs = new GameService()&#123;</div><div class="line">	public Game getGame()&#123;</div><div class="line">		return new Chess();</div><div class="line">	&#125;</div><div class="line">&#125;;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">public  class Games &#123;</div><div class="line">	static void PalyGame(GameService g)&#123;</div><div class="line">		Game s= g.getGame();</div><div class="line">		s.play();</div><div class="line">	&#125;</div><div class="line">public static void main(String args[])&#123;</div><div class="line">	PalyGame(Chess.gs);</div><div class="line">	PalyGame(Check.gs);</div><div class="line">	</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="10-7嵌套类"><a href="#10-7嵌套类" class="headerlink" title="10.7嵌套类"></a>10.7嵌套类</h1><p>如果不需要内部类对象和外部类对象之间有联系，那么可以将内部类声明为static.<br>特点：</p>
+<ol>
+<li>创建嵌入类的对象，并不需要其外部类的对象</li>
+<li>不能从嵌入类的对象访问非静态的外部类对象。</li>
+</ol>
+<h2 id="接口内部类"><a href="#接口内部类" class="headerlink" title="接口内部类"></a>接口内部类</h2><h1 id="为什么需要内部类："><a href="#为什么需要内部类：" class="headerlink" title="为什么需要内部类："></a>为什么需要内部类：</h1><p>可以实现多重继承。</p>
+<h1 id="内部类的继承"><a href="#内部类的继承" class="headerlink" title="内部类的继承"></a>内部类的继承</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">package com.yuan.innerclasses;</div><div class="line"></div><div class="line">class WithInner&#123;</div><div class="line">	class Inner&#123;&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class InheritInner extends WithInner.Inner&#123;</div><div class="line">	InheritInner(WithInner i)&#123;</div><div class="line">		i.super();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2018/01/09/java学习笔记 接口/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/09/java学习笔记 接口/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-09T15:42:59+08:00">
+                2018-01-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/09/java学习笔记 接口/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/09/java学习笔记 接口/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><h2 id="9-1-抽象类抽象方法"><a href="#9-1-抽象类抽象方法" class="headerlink" title="9.1 抽象类抽象方法"></a>9.1 抽象类抽象方法</h2><p>包含抽象类方法的类叫抽象类。<br>当继承一个抽象类的时候时候，必须实现所有的抽象方法。</p>
+<h1 id="9-2-接口"><a href="#9-2-接口" class="headerlink" title="9.2 接口"></a>9.2 接口</h1><p>· 更进一步的抽象，没有提供任何具体的实现。</p>
+<ul>
+<li>使用关键字<strong>interface</strong></li>
+<li>类实现接口采用关键字<strong>implements</strong> </li>
+<li>接口中的方法都被定义成public,如果没有声明，他们自动也是public<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line">package com.yuan.interfaces.music;</div><div class="line">import com.yuan.interfaces.music.Note;</div><div class="line">interface Instrument&#123;</div><div class="line">	int Vlaue = 5 ;//static&amp;final</div><div class="line">	void play(Note e);</div><div class="line">	void adjust();</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Wind implements Instrument&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public void play(Note e) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.play()&quot;+e);</div><div class="line">	&#125;</div><div class="line">	public String toString()&#123;return &quot;Wind&quot;;&#125;</div><div class="line">	@Override</div><div class="line">	public void adjust() &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.adjust()&quot;);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Percussion implements Instrument&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public void play(Note e) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.play()&quot;+e);</div><div class="line">	&#125;</div><div class="line">	public String toString()&#123;return &quot;Percussion&quot;;&#125;</div><div class="line">	@Override</div><div class="line">	public void adjust() &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.adjust()&quot;);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Stringed implements Instrument&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public void play(Note e) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.play()&quot;+e);</div><div class="line">	&#125;</div><div class="line">	public String toString()&#123;return &quot;Stringed&quot;;&#125;</div><div class="line">	@Override</div><div class="line">	public void adjust() &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.adjust()&quot;);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Brass extends Wind&#123;</div><div class="line"></div><div class="line">	</div><div class="line">	public String toString()&#123;return &quot;Brass&quot;;&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class WoodWind extends Wind&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public String toString()&#123;return &quot;WoodWind&quot;;&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">public  class Music &#123;</div><div class="line"> static void tunc(Instrument i)&#123;</div><div class="line">	 i.play(Note.B_FLAY);</div><div class="line"> &#125;</div><div class="line"> static void tuncAll(Instrument[] e)&#123;</div><div class="line">	 for(Instrument i:e)</div><div class="line">		 tunc(i);</div><div class="line"> &#125;</div><div class="line"></div><div class="line"> public static void main(String args[])&#123;</div><div class="line">	 Instrument[] i =&#123;</div><div class="line">		new Wind(),</div><div class="line">		new Percussion(),</div><div class="line">		new Stringed(),</div><div class="line">		new Brass(),</div><div class="line">		new WoodWind()</div><div class="line">	 &#125;;</div><div class="line">	 tuncAll(i);</div><div class="line"> &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="9-3-完全解耦"><a href="#9-3-完全解耦" class="headerlink" title="9.3 完全解耦"></a>9.3 完全解耦</h1><p> 策略模式：创建一个能够根据传递的参数对象不同而具有不同的行为的方法。</p>
+<p> #9.4 JAVA 中的多重继承<br> java可以通过接口实现多重继承。 使用借口的核心原因：1.向上转型为多个基类型。2防止客户端程序员创建该类的对象、</p>
+<h1 id="9-5通过继承来扩展接口"><a href="#9-5通过继承来扩展接口" class="headerlink" title="9.5通过继承来扩展接口"></a>9.5通过继承来扩展接口</h1><p> extends 可以应用多个接口、</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2018/01/08/访问权限控制/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/08/访问权限控制/" itemprop="url">访问权限控制</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-08T12:25:45+08:00">
+                2018-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/08/访问权限控制/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/08/访问权限控制/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Java有四种访问权限， 其中三种有访问权限修饰符，分别为private，public和protected，还有一种不带任何修饰符。</p>
+<ol>
+<li>private: Java语言中对访问权限限制的最窄的修饰符，一般称之为“私有的”。被其修饰的类、属性以及方法只能被该类的对象访问，其子类不能访问，更不能允许跨包访问。  </li>
+<li>default：即不加任何访问修饰符，通常称为“默认访问模式“。该模式下，只允许在同一个包中进行访问。</li>
+<li>protect: 介于public 和 private 之间的一种访问修饰符，一般称之为“保护形”。被其修饰的类、属性以及方法只能被类本身的方法及子类访问，即使子类在不同的包中也可以访问。</li>
+<li>public： Java语言中访问限制最宽的修饰符，一般称之为“公共的”。被其修饰的类、属性以及方法不仅可以跨类访问，而且允许跨包（package）访问。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">public</th>
+<th style="text-align:right">protect</th>
+<th style="text-align:right">default</th>
+<th style="text-align:right">private</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不同包非子类</td>
+<td style="text-align:center">√</td>
+<td style="text-align:right"></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>不同包的子类</td>
+<td style="text-align:center">√</td>
+<td style="text-align:right">√</td>
+<td style="text-align:right"></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>同一个包</td>
+<td style="text-align:center">√</td>
+<td style="text-align:right">√</td>
+<td style="text-align:right">√</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>同一个类</td>
+<td style="text-align:center">√</td>
+<td style="text-align:right">√</td>
+<td style="text-align:right">√</td>
+<td style="text-align:right">√</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/11/28/Oracle表空间/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/28/Oracle表空间/" itemprop="url">Oracle表空间</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-28T23:07:57+08:00">
+                2017-11-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/28/Oracle表空间/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/11/28/Oracle表空间/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="1-查看表空间"><a href="#1-查看表空间" class="headerlink" title="1.查看表空间"></a>1.查看表空间</h1><pre><code>
+SELECT t.tablespace_name, round(SUM(bytes / (1024 * 1024)), 0) ts_size 
+FROM dba_tablespaces t, dba_data_files d 
+WHERE t.tablespace_name = d.tablespace_name 
+GROUP BY t.tablespace_name; 
+ select 
+b.file_id 文件ID号, 
+b.tablespace_name 表空间名, 
+b.bytes/1024/1024||'M'字节数, 
+(b.bytes-sum(nvl(a.bytes,0)))/1024/1024||'M' 已使用, 
+sum(nvl(a.bytes,0))/1024/1024||'M' 剩余空间, 
+100 - sum(nvl(a.bytes,0))/(b.bytes)*100 占用百分比 
+from dba_free_space a,dba_data_files b 
+where a.file_id=b.file_id 
+group by b.tablespace_name,b.file_id,b.bytes 
+order by b.file_id; 
+--查看表空间大小
+</code></pre>
+# 2 创建用户表空间
+<pre><code>
+CREATE TABLESPACE test                              //创建表空间test
+LOGGING
+DATAFILE 'D:\ORACLE\PRODUCT\10.2.0\ORADATA\ORCL\TEST01.DBF'    //创建的数据文件
+SIZE 32M                                                            //初始大小
+AUTOEXTEND ON                                                                //数据文件自动扩容
+NEXT 32M MAXSIZE 2048M  
+//最大值
+EXTENT MANAGEMENT LOCAL;
+</code></pre>
+# 3 删除表空间，同时删除数据文件
+<pre><code>
+drop tablespace test including contents and datafiles;
+</code></pre>
+# 4 创建用户临时表空间
+<pre><code>
+CREATE TEMPORARY TABLESPACE test_temp
+TEMPFILE 'D:\oracle\product\10.2.0\oradata\orcl\test_temp01.dbf'
+SIZE 32M
+AUTOEXTEND ON
+NEXT 32M MAXSIZE 2048M  --最大值
+EXTENT MANAGEMENT LOCAL;
+</code></pre>
+# 5 创建用户并指定表空间：
+<pre><code>
+CREATE USER xiaoming IDENTIFIED BY xm123                  //创建用户xiaoming，设置密码为xm123
+DEFAULT TABLESPACE TEST                                   //指定默认表空间为test
+TEMPORARY TABLESPACE TEST_TEMP;                            //指定临时表空间为test_temp
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/08/18/python学习笔记3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yuanlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="磊の博客">
     </span>
 
     
@@ -282,7 +1485,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T08:57:10+08:00">
                 2017-08-18
@@ -338,7 +1541,7 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/08/18/python学习笔记3/#more" rel="contents">
-              Weiterlesen &raquo;
+              Read more &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -386,13 +1589,13 @@
     <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/08/17/python学习笔记2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="yuanlei">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="磊の博客">
     </span>
 
     
@@ -412,7 +1615,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-17T08:42:41+08:00">
                 2017-08-17
@@ -467,971 +1670,7 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/08/17/python学习笔记2/#more" rel="contents">
-              Weiterlesen &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/08/16/python-学习笔记1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/16/python-学习笔记1/" itemprop="url">python 学习笔记1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-16T16:37:24+08:00">
-                2017-08-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/08/16/python-学习笔记1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/16/python-学习笔记1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><p>一种解释型的，面向对象的，带有动态语义的高级程序设计语言</p>
-<h2 id="第一章-基础知识"><a href="#第一章-基础知识" class="headerlink" title="第一章 基础知识"></a>第一章 基础知识</h2><h2 id="1-1-基本运算符"><a href="#1-1-基本运算符" class="headerlink" title="1.1 基本运算符"></a>1.1 基本运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+，-，*，/，%，//( 取整)，**（幂运算）</div></pre></td></tr></table></figure>
-<p>八进制 0o<br>十六进制 0x<br>长字符串用3个引号代替<br>转义字符\<br>变量，语句，函数，模块等概念</p>
-<h1 id="2-列表和元组"><a href="#2-列表和元组" class="headerlink" title="2 列表和元组"></a>2 列表和元组</h1><h2 id="2-1-序列概述"><a href="#2-1-序列概述" class="headerlink" title="2.1 序列概述"></a>2.1 序列概述</h2><p>pythomn 最基本数据结构是序列，序列中的每个元素被分配一个序列——即元素的位置，也称为索引。第一个索引序号为0</p>
-<p>Python中六种内建的序列 ： 列表，元祖，字符串，Unicode字符串，buffer对象.xrange对象</p>
-<p><strong>列表和元组的区别</strong>：列表是可以修改的，元组是不能的</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/16/python-学习笔记1/#more" rel="contents">
-              Weiterlesen &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/07/28/Oracle/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/28/Oracle/" itemprop="url">Oracle学习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-28T09:13:01+08:00">
-                2017-07-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/07/28/Oracle/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/28/Oracle/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Oracle-学习笔记1"><a href="#Oracle-学习笔记1" class="headerlink" title="Oracle 学习笔记1"></a>Oracle 学习笔记1</h1><h2 id="1-oracle11g-概述"><a href="#1-oracle11g-概述" class="headerlink" title="1 oracle11g 概述"></a>1 oracle11g 概述</h2><h3 id="1-1-oracle发展历史"><a href="#1-1-oracle发展历史" class="headerlink" title="1.1 oracle发展历史"></a>1.1 oracle发展历史</h3><pre><code>起源于1970年《大型共享数据库的关系模型》  
-目前已经到oracle12g
-</code></pre><p>###1.2关系数据库基本理论<br><strong>数据库管理技术</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">graph LR;  </div><div class="line">	人工管理--&gt;文件管理;</div><div class="line">	文件管理--&gt;数据库系统</div></pre></td></tr></table></figure></p>
-<p><strong>数据模型</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">graph LR;</div><div class="line">层次模型 --&gt;网状模型;</div><div class="line">网状模型--&gt; 关系模型</div></pre></td></tr></table></figure></p>
-<h3 id="1-2-1-ag"><a href="#1-2-1-ag" class="headerlink" title="1.2.1 ag"></a>1.2.1 ag</h3>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/07/28/Oracle学习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/28/Oracle学习/" itemprop="url">Oracle学习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-28T09:13:01+08:00">
-                2017-07-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/07/28/Oracle学习/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/28/Oracle学习/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#Oracle 学习笔记</p>
-<p>##1 oracle11g 概述</p>
-<h3 id="1-1-oracle发展历史"><a href="#1-1-oracle发展历史" class="headerlink" title="1.1 oracle发展历史"></a>1.1 oracle发展历史</h3><p>起源于1970年《大型共享数据库的关系模型》<br>目前已经到oracle12g</p>
-<p>###1.2关系数据库基本理论<br>数据库管理技术<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">graph LR;  </div><div class="line">	人工管理--&gt;文件管理;</div><div class="line">	文件管理--&gt;数据库系统</div></pre></td></tr></table></figure></p>
-<p>数据模型<br>层次模型 网状模型 关系模型  </p>
-<div id="flowchart-0" class="flow-chart"></div>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:center">属性</th>
-<th style="text-align:right">方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">测试</td>
-<td style="text-align:center"><strong><code>name</code></strong></td>
-<td style="text-align:right">test（）</td>
-</tr>
-<tr>
-<td style="text-align:left">测试</td>
-<td style="text-align:center"><strong><code>name</code></strong></td>
-<td style="text-align:right">test（）</td>
-<td><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">graph LR;  
-　　A-->B;    
-　　A-->C;  
-　　B-->D;  
-　　C-->D;</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/07/22/java学习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/22/java学习/" itemprop="url">java学习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-22T10:02:59+08:00">
-                2017-07-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/07/22/java学习/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/22/java学习/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#数组</p>
-<p>##一维数组<br>数组：一组相同数据     </p>
-<p><pre>数组类型[] 数组名<br>数组类类型 数据名[]<br></pre><br> example </p>
-<p><pre><br>int a = new int[]{1,2,3}<br>int a = new int[3];<br>a[0]=1;<br>a[1]=2;<br>a[2]=3;<br>int[] a ={1,2,3};<br></pre><br>下表不能为负数，从o开始，最大下标为length-1;</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/07/21/统计学/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/21/统计学/" itemprop="url">统计学</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-21T16:20:27+08:00">
-                2017-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/07/21/统计学/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/21/统计学/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="11章-总体和样本的估计-进行预测"><a href="#11章-总体和样本的估计-进行预测" class="headerlink" title="11章 总体和样本的估计 进行预测"></a>11章 总体和样本的估计 进行预测</h1><p><strong>内容</strong>： 如何通过样本估计总体，如何通过总体了解样本</p>
-<h2 id="样本估计总体"><a href="#样本估计总体" class="headerlink" title="样本估计总体"></a>样本估计总体</h2><p>样本的均值被称为总体均值的点估计量</p>
-<p>总体的均值可以用样本的均值进行评估。<br>不能直接用样本的方差直接估计总体的方差。因为样本的方差会小于总体的离散程度。</p>
-<p>样本的概率估计估计总体的概率<br>总体的估计样本的概率</p>
-<p>如果考虑同一个总体中所有大小为n的可能样本，然后用这些样本的均值形成分布我，则该分布为“均值的抽样分布”。   </p>
-<h1 id="12章-置信区间的构建"><a href="#12章-置信区间的构建" class="headerlink" title="12章 置信区间的构建"></a>12章 置信区间的构建</h1><p>用样本来衡量总体，如果只是采用一个点，则可能有很大的误差，采用一个置信区间的更加的合理。<br>求解置信区间的四步骤：</p>
-<ol>
-<li>选择总体估计量</li>
-<li>求出其抽样分布</li>
-<li>决定置信水平</li>
-<li>求出置信上下限</li>
-</ol>
-<p>当样本数目比较大时，采用正态分布，当在用小样本估计总体方差时，<strong>T分布更加准确</strong>。  </p>
-<p>上2章介绍了两钟估计总体统计量的方法。</p>
-<ol>
-<li>点估计量</li>
-<li>使用总体统计量的置信区间</li>
-</ol>
-<h1 id="第13章-假设检验的应用"><a href="#第13章-假设检验的应用" class="headerlink" title="第13章 假设检验的应用"></a>第13章 假设检验的应用</h1><p>假设检验的六个步骤</p>
-<ol>
-<li>确定要进行检验的假设</li>
-<li>选择检验统计量</li>
-<li>确认用于做决策的拒绝域</li>
-<li>求出检验统计量的P值</li>
-<li>查看样本的结果是否位于拒绝域内</li>
-<li>作出决策</li>
-</ol>
-<p>第一类错误：原假设正确却拒绝原假设 ，即检验的显著水平<br>第二类错误：原假设错误却接受原假设</p>
-<h1 id="第14章-卡方分布"><a href="#第14章-卡方分布" class="headerlink" title="第14章 卡方分布"></a>第14章 卡方分布</h1><p><strong>目的</strong>：检查实际结果与期望结果之间何时存在显著差别。   </p>
-<p>卡方统计量的用途：</p>
-<ol>
-<li>检验<strong>拟合优度</strong></li>
-<li>检验2个变量的<strong>独立性</strong>。</li>
-</ol>
-<p>卡方检验的六个步骤</p>
-<ol>
-<li>确定要进行检验的假设以及备选假设</li>
-<li>求出期望频数和自由度</li>
-<li>确认用于做决策的拒绝域</li>
-<li>计算检验统计量卡方</li>
-<li>查看样本的结果是否位于拒绝域内</li>
-<li>作出决策</li>
-</ol>
-<p><img src="/images/chi.png" alt=""></p>
-<h1 id="第15章-相关和回归"><a href="#第15章-相关和回归" class="headerlink" title="第15章 相关和回归"></a>第15章 相关和回归</h1><p>之前都是对单一的变量进行分析，现在对2个变量进行相关的分析。<br>因变量和自变量</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/07/08/时间序列/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/08/时间序列/" itemprop="url">时间序列预测 python实现</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-08T22:00:30+08:00">
-                2017-07-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/07/08/时间序列/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/08/时间序列/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#时间序列预测 python实现<br>使用<strong><code>ARIMA</code></strong>实现。</p>
-<p>##理论知识<br>ARIMA模型全称为自回归积分滑动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，<br>ARIMA(p,d,q)称为差分自回归移动平均模型<br>AR是”自回归”，p为自回归项数；MA为”滑动平均”，q为滑动平均项数，d为使之成为平稳序列所做的差分次数（阶数）</p>
-<p>时间序列的假设：<strong>时间序列的行为不随时间改变</strong>。。数学知识不足，去学习相关的知识。</p>
-<p>1.首先识别时间序列的稳定性，通过<code>散点图</code>，<code>自相关函数</code>，<code>偏相关函数</code>判断是否平稳<br>2.如果不是平稳的，采用d阶查分，使得序列变得稳定。<br><strong>？？为什么算法要求文档呢</strong><br>AC自相关系数 ，PAC偏相关系数 </p>
-<p>3.根据所识别的特征建立相应的时间模型，自相关函数是拖尾的（？？）<br>采用AR模型，偏相关拖尾的，采用 MA模型，自相关函数和偏相关函数都是拖尾的，则采用 ARMA模型</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://yuanleiuestc.github.io/2017/07/07/hexo-github-博客搭建/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/07/hexo-github-博客搭建/" itemprop="url">hexo+github 博客搭建</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-07T22:01:30+08:00">
-                2017-07-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/07/07/hexo-github-博客搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/07/hexo-github-博客搭建/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Hexo-github博客搭建"><a href="#Hexo-github博客搭建" class="headerlink" title="Hexo+github博客搭建"></a>Hexo+github博客搭建</h1><h2 id="安装软件node-js-git-网上找资料下"><a href="#安装软件node-js-git-网上找资料下" class="headerlink" title="安装软件node.js , git 网上找资料下"></a>安装软件node.js , git 网上找资料下</h2><h2 id="安装Hexo-本博客采用3-0版本"><a href="#安装Hexo-本博客采用3-0版本" class="headerlink" title="安装Hexo(本博客采用3.0版本)"></a>安装Hexo(本博客采用3.0版本)</h2><p>   打开Git Bash,执行下面命令</p>
-<pre><code> npm install -g hexo-cli
-</code></pre>
-如果安装失败，采用淘宝的镜像
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/07/hexo-github-博客搭建/#more" rel="contents">
-              Weiterlesen &raquo;
+              Read more &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -1470,6 +1709,10 @@
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1502,10 +1745,10 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
+               alt="yuanlei" />
+          <p class="site-author-name" itemprop="name">yuanlei</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -1513,8 +1756,8 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -1527,7 +1770,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               
             </div>
           
@@ -1568,16 +1811,16 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">yuanlei</span>
 </div>
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
