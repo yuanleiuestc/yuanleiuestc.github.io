@@ -130,6 +130,495 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-jsqlparse教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/13/jsqlparse教程/">Jsqlparse教程</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/13/jsqlparse教程/" class="archive-article-date">
+  	<time datetime="2018-03-13T03:52:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>参考博客 <a href="http://www.cnblogs.com/liuwt0911/p/4420472.html" target="_blank" rel="external">http://www.cnblogs.com/liuwt0911/p/4420472.html</a></p>
+<p>最近做一个项目，需要进行sql解析，看网上的调研情况：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">调研结果:</div><div class="line">1. 商业组件包 sqlparser 有试用版组件, 限制SQL少于10000字符,99天后过期</div><div class="line">2. 使用 presto 的 parser 或 druid 的 parser. </div><div class="line">3. 使用 JSqlParser</div><div class="line">时间紧任务重, 暂时先用商业组件包 sqlparser 试用版组件完成手头任务. 有空考虑 presto 和 JSqlParser 做一个工具.</div><div class="line"></div><div class="line"></div><div class="line">下面网上找到的资源:</div><div class="line"></div><div class="line">有没有好用的开源sql语法分析器？</div><div class="line">https://www.zhihu.com/question/51676071</div><div class="line">讨论中有推荐 presto</div><div class="line"></div><div class="line">利用 druid 的 sql parser 模块解析 sql 语句</div><div class="line">http://www.cnblogs.com/etangyushan/p/5490183.html</div><div class="line"></div><div class="line"></div><div class="line">JSqlParser</div><div class="line">https://github.com/JSQLParser/JSqlParser</div><div class="line">http://www.cnblogs.com/liuwt0911/p/4420472.html</div><div class="line"></div><div class="line"></div><div class="line">python sqlparse</div><div class="line">https://github.com/andialbrecht/sqlparse</div><div class="line">经测试, 不能解析join中的子查询</div><div class="line"></div><div class="line"> </div><div class="line"></div><div class="line">商业组件包 sqlparser, 支持VCL/.Net/Java, 有试用版(限制SQL少于10000字符,99天后过期)</div><div class="line">http://www.sqlparser.com/download.php</div><div class="line"></div><div class="line">商业组件包 sqlparser的 python-bind(用C写的, 编译麻烦些)</div><div class="line">https://github.com/TwoLaid/python-sqlparser</div><div class="line"></div><div class="line"></div><div class="line">FoundationDB 的 sql-parser(FoundationDB已经转为闭源项目)</div><div class="line">http://blog.csdn.net/isea533/article/details/38361911</div></pre></td></tr></table></figure></p>
+<p>本人选择免费的JSqlparse 做为实现工具。</p>
+<p>#JSqlparse<br>采用的是访问者模式进行了设计<br>select    <em>SelectItem</em>   from   <em>FromItem</em>   where   <em>Expression</em></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/13/jsqlparse教程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-eclipse常用快捷键" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/11/eclipse常用快捷键/">Eclipse常用快捷键</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/11/eclipse常用快捷键/" class="archive-article-date">
+  	<time datetime="2018-03-11T02:03:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>
+    CTRL+SHIFT+F ：用于格式化代码
+    CTRL+F：用于当前文件的字符级查找
+    CTRL+SHIFT+W：关闭代码区所有打开的文件
+    CTRL+W：关闭代码区当前打开的文件
+    CTRL+SHIFT+E：可以激活、关闭和选择某个已经在代码区打开的文件
+    CTRL+E：此操作会弹出一个代码查找提示框，提示你能够选择的文 件，当代码区打开的文件太多时比较好用
+    CTRL+SHIFT+R：用于在所有打开的工程中查找你需要的文件
+    CTRL+SHIFT+T：仅仅针对Java类进行查找
+    CTRL+SHIFT+H：把Hierarchy窗口中查看找到的类
+    CTRL+H：提供一种详细查看类或文件的方式
+    CTRL+SHIFT+?：提供Jsp，XML中的代码注释
+    CTRL+Z:撤销上一步
+    CTRL+Y：撤销下一步
+    ALT+?：用于弹出网页代码（XML，html）中的提示信息
+    F6：单步跟踪断点
+    F7：进入调用方法内部继续跟踪断点
+    F8：直接去下一个断点
+    ALT+/: 快速注释
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">eclipse</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/11/eclipse常用快捷键/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-java学习笔记并发-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/08/java学习笔记并发-1/">Java学习笔记并发</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/08/java学习笔记并发-1/" class="archive-article-date">
+  	<time datetime="2018-03-08T08:11:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/08/java学习笔记并发-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-java学习笔记并发" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/08/java学习笔记并发/">Java学习笔记并发</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/08/java学习笔记并发/" class="archive-article-date">
+  	<time datetime="2018-03-08T07:23:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h1><p>出现原因：<br>1.多cpu芯片的出现，但cup可能存在阻塞现象。</p>
+<p>线程的实现方式：<br>1.实现接口Runnable的run()方法。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/08/java学习笔记并发/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-java学习笔记注解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/08/java学习笔记注解/">Java学习笔记注解</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/08/java学习笔记注解/" class="archive-article-date">
+  	<time datetime="2018-03-08T07:23:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h1><p>代码的元数据。<br>@Override<br>@Deprecated<br>@SuppressWarnings</p>
+<p>注解的定义<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@Target(ElementType.METHOD)</div><div class="line">@Retention(RetentionPolicy.RUNTIME)</div><div class="line">public @interface Test()&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/08/java学习笔记注解/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-java学习笔记IO" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/08/java学习笔记IO/">java学习笔记IO</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/08/java学习笔记IO/" class="archive-article-date">
+  	<time datetime="2018-03-08T07:10:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>流：代表任何有能力产出数据的数据源对象或者是有能力接受数据的接收端对象</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/08/java学习笔记IO/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="java学习笔记-枚举" class="article article-type-java学习笔记  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/08/枚举/">枚举</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/08/枚举/" class="archive-article-date">
+  	<time datetime="2018-03-08T06:11:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>定义的枚举类型不可再继承其他的类型的类，因为它已经继承了java.lang.Enum。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/08/枚举/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-tags/随笔/新的开始" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -377,593 +866,9 @@
 
 
   
-    <article id="post-java学习笔记 对象" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/07/java学习笔记 对象/">Java学习笔记 对象</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/07/java学习笔记 对象/" class="archive-article-date">
-  	<time datetime="2017-12-07T14:01:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><p>COllection 一种存放一组对象的方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">package com.yuan.holding;</div><div class="line"></div><div class="line">import java.util.ArrayList;</div><div class="line">import java.util.Collection;</div><div class="line"></div><div class="line">public class SimpleCollection &#123;</div><div class="line">public static void main(String args[])&#123;</div><div class="line">	Collection&lt;Integer&gt; c= new  ArrayList&lt;Integer&gt;();</div><div class="line">	for(int i=0;i&lt;10;i++)&#123;</div><div class="line">		c.add(i);</div><div class="line">	&#125;</div><div class="line">	for(Integer i :c)&#123;</div><div class="line">		System.out.println(i+&quot; &quot;);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>#添加一组元素：<br>Arrays.aslist()<br>Collections.addAll();</p>
-<h1 id="容器的打印"><a href="#容器的打印" class="headerlink" title="容器的打印"></a>容器的打印</h1><p>list : ArrayList LinkedList<br>MAP:HashMap,TreeMap,LinkedHashMap<br>Set: HashSet,TreeSet,LinkedHashSet</p>
-<h1 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h1><p>Linkedlist实现了队列和堆栈的接口。</p>
-<p>#迭代器<br>Iterator<br>hasNext()检查序列中是否还有元素<br>next() 获得序列的下一个元素<br>ListIterator 可以双向异动。</p>
-<h1 id="set"><a href="#set" class="headerlink" title="set"></a>set</h1><p>集合，HashMap(散列表),TreeMap(红黑树),LinkedHashMap<br>保存不重复的元素。Set是接口</p>
-<h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><h1 id="QUEUE"><a href="#QUEUE" class="headerlink" title="QUEUE"></a>QUEUE</h1><h1 id="iterable"><a href="#iterable" class="headerlink" title="iterable"></a>iterable</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">package com.yuan.holding;</div><div class="line"></div><div class="line">import java.util.ArrayList;</div><div class="line">import java.util.Arrays;</div><div class="line">import java.util.Collection;</div><div class="line">import java.util.Iterator;</div><div class="line"></div><div class="line">class ReversibleArrayList&lt;T&gt; extends ArrayList&lt;T&gt;&#123;</div><div class="line">	public ReversibleArrayList(Collection&lt;T&gt; c)&#123;super(c);&#125;</div><div class="line">	public Iterable&lt;T&gt; reversed()&#123;</div><div class="line">		return new Iterable&lt;T&gt;()&#123;</div><div class="line">			public Iterator&lt;T&gt; iterator()&#123;</div><div class="line">				return  new Iterator&lt;T&gt;()&#123;</div><div class="line">					int current = size()-1;</div><div class="line">					public boolean hasNext()&#123;return current&gt;-1;&#125;</div><div class="line">					public T next()&#123;return get(current--);&#125;</div><div class="line">					public void remove()&#123;</div><div class="line">						throw new UnsupportedOperationException();</div><div class="line">					&#125;</div><div class="line">				&#125;;</div><div class="line">			&#125;</div><div class="line">			&#125;;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">public class AdapterMethodIdiom &#123;</div><div class="line"></div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">ReversibleArrayList&lt;String&gt; ral = new ReversibleArrayList&lt;String&gt;(Arrays.asList((&quot;To be or not to be&quot;).split(&quot; &quot;)));</div><div class="line">for(String s:  ral)&#123;</div><div class="line">	System.out.print(s+&quot; &quot;);</div><div class="line">&#125;</div><div class="line">for(String s1 :ral.reversed())&#123;</div><div class="line">	System.out.print(s1+&quot; &quot;);</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/07/java学习笔记 对象/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Oracle表空间" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/28/Oracle表空间/">Oracle表空间</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/28/Oracle表空间/" class="archive-article-date">
-  	<time datetime="2017-11-28T15:07:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-查看表空间"><a href="#1-查看表空间" class="headerlink" title="1.查看表空间"></a>1.查看表空间</h1><pre><code>
-SELECT t.tablespace_name, round(SUM(bytes / (1024 * 1024)), 0) ts_size 
-FROM dba_tablespaces t, dba_data_files d 
-WHERE t.tablespace_name = d.tablespace_name 
-GROUP BY t.tablespace_name; 
- select 
-b.file_id 文件ID号, 
-b.tablespace_name 表空间名, 
-b.bytes/1024/1024||'M'字节数, 
-(b.bytes-sum(nvl(a.bytes,0)))/1024/1024||'M' 已使用, 
-sum(nvl(a.bytes,0))/1024/1024||'M' 剩余空间, 
-100 - sum(nvl(a.bytes,0))/(b.bytes)*100 占用百分比 
-from dba_free_space a,dba_data_files b 
-where a.file_id=b.file_id 
-group by b.tablespace_name,b.file_id,b.bytes 
-order by b.file_id; 
---查看表空间大小
-</code></pre>
-# 2 创建用户表空间
-<pre><code>
-CREATE TABLESPACE test                              //创建表空间test
-LOGGING
-DATAFILE 'D:\ORACLE\PRODUCT\10.2.0\ORADATA\ORCL\TEST01.DBF'    //创建的数据文件
-SIZE 32M                                                            //初始大小
-AUTOEXTEND ON                                                                //数据文件自动扩容
-NEXT 32M MAXSIZE 2048M  
-//最大值
-EXTENT MANAGEMENT LOCAL;
-</code></pre>
-# 3 删除表空间，同时删除数据文件
-<pre><code>
-drop tablespace test including contents and datafiles;
-</code></pre>
-# 4 创建用户临时表空间
-<pre><code>
-CREATE TEMPORARY TABLESPACE test_temp
-TEMPFILE 'D:\oracle\product\10.2.0\oradata\orcl\test_temp01.dbf'
-SIZE 32M
-AUTOEXTEND ON
-NEXT 32M MAXSIZE 2048M  --最大值
-EXTENT MANAGEMENT LOCAL;
-</code></pre>
-# 5 创建用户并指定表空间：
-<pre><code>
-CREATE USER xiaoming IDENTIFIED BY xm123                  //创建用户xiaoming，设置密码为xm123
-DEFAULT TABLESPACE TEST                                   //指定默认表空间为test
-TEMPORARY TABLESPACE TEST_TEMP;                            //指定临时表空间为test_temp
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/28/Oracle表空间/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java学习笔记 接口" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/07/java学习笔记 接口/">Java学习笔记 接口</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/07/java学习笔记 接口/" class="archive-article-date">
-  	<time datetime="2017-11-07T04:01:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><h2 id="9-1-抽象类抽象方法"><a href="#9-1-抽象类抽象方法" class="headerlink" title="9.1 抽象类抽象方法"></a>9.1 抽象类抽象方法</h2><p>包含抽象类方法的类叫抽象类。<br>当继承一个抽象类的时候时候，必须实现所有的抽象方法。</p>
-<h1 id="9-2-接口"><a href="#9-2-接口" class="headerlink" title="9.2 接口"></a>9.2 接口</h1><p>· 更进一步的抽象，没有提供任何具体的实现。</p>
-<ul>
-<li>使用关键字<strong>interface</strong></li>
-<li>类实现接口采用关键字<strong>implements</strong> </li>
-<li>接口中的方法都被定义成public,如果没有声明，他们自动也是public<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line">package com.yuan.interfaces.music;</div><div class="line">import com.yuan.interfaces.music.Note;</div><div class="line">interface Instrument&#123;</div><div class="line">	int Vlaue = 5 ;//static&amp;final</div><div class="line">	void play(Note e);</div><div class="line">	void adjust();</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Wind implements Instrument&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public void play(Note e) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.play()&quot;+e);</div><div class="line">	&#125;</div><div class="line">	public String toString()&#123;return &quot;Wind&quot;;&#125;</div><div class="line">	@Override</div><div class="line">	public void adjust() &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.adjust()&quot;);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Percussion implements Instrument&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public void play(Note e) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.play()&quot;+e);</div><div class="line">	&#125;</div><div class="line">	public String toString()&#123;return &quot;Percussion&quot;;&#125;</div><div class="line">	@Override</div><div class="line">	public void adjust() &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.adjust()&quot;);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Stringed implements Instrument&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public void play(Note e) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.play()&quot;+e);</div><div class="line">	&#125;</div><div class="line">	public String toString()&#123;return &quot;Stringed&quot;;&#125;</div><div class="line">	@Override</div><div class="line">	public void adjust() &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		System.out.println(this + &quot;.adjust()&quot;);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Brass extends Wind&#123;</div><div class="line"></div><div class="line">	</div><div class="line">	public String toString()&#123;return &quot;Brass&quot;;&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line">class WoodWind extends Wind&#123;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public String toString()&#123;return &quot;WoodWind&quot;;&#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">public  class Music &#123;</div><div class="line"> static void tunc(Instrument i)&#123;</div><div class="line">	 i.play(Note.B_FLAY);</div><div class="line"> &#125;</div><div class="line"> static void tuncAll(Instrument[] e)&#123;</div><div class="line">	 for(Instrument i:e)</div><div class="line">		 tunc(i);</div><div class="line"> &#125;</div><div class="line"></div><div class="line"> public static void main(String args[])&#123;</div><div class="line">	 Instrument[] i =&#123;</div><div class="line">		new Wind(),</div><div class="line">		new Percussion(),</div><div class="line">		new Stringed(),</div><div class="line">		new Brass(),</div><div class="line">		new WoodWind()</div><div class="line">	 &#125;;</div><div class="line">	 tuncAll(i);</div><div class="line"> &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="9-3-完全解耦"><a href="#9-3-完全解耦" class="headerlink" title="9.3 完全解耦"></a>9.3 完全解耦</h1><p> 策略模式：创建一个能够根据传递的参数对象不同而具有不同的行为的方法。</p>
-<p> #9.4 JAVA 中的多重继承<br> java可以通过接口实现多重继承。 使用借口的核心原因：1.向上转型为多个基类型。2防止客户端程序员创建该类的对象、</p>
-<h1 id="9-5通过继承来扩展接口"><a href="#9-5通过继承来扩展接口" class="headerlink" title="9.5通过继承来扩展接口"></a>9.5通过继承来扩展接口</h1><p> extends 可以应用多个接口、</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/07/java学习笔记 接口/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-python学习笔记3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/18/python学习笔记3/">Python学习笔记3</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/18/python学习笔记3/" class="archive-article-date">
-  	<time datetime="2017-08-18T00:57:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#字典</p>
-<p>映射：通过名字来引用值的数据结构。</p>
-<p>python唯一内建的映射结构是<strong>字典</strong>，字典中的值没有特殊的顺序，但是都存储在特定的一个键（key）下，键可以是数字，字符串和元组。</p>
-<h2 id="字典的创建和使用"><a href="#字典的创建和使用" class="headerlink" title="字典的创建和使用"></a>字典的创建和使用</h2><h3 id="创建字典"><a href="#创建字典" class="headerlink" title="创建字典"></a>创建字典</h3>
-        
-          <a class="article-more-a" href="/2017/08/18/python学习笔记3/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/18/python学习笔记3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-python学习笔记2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/17/python学习笔记2/">Python学习笔记2</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/17/python学习笔记2/" class="archive-article-date">
-  	<time datetime="2017-08-17T00:42:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><h2 id="字符串的基本操作"><a href="#字符串的基本操作" class="headerlink" title="字符串的基本操作"></a>字符串的基本操作</h2><p>字符串：字符串可以使用所有通用的序列操作（索引，分片，判断成员资格，乘法，求长度，最大值，最小值（unicode码）），字符串与元组一样，同样是不可变的序列。</p>
-<h2 id="字符串的格式化"><a href="#字符串的格式化" class="headerlink" title="字符串的格式化"></a>字符串的格式化</h2><p>使用字符串格式化操作符(%)来实现，如果格式化字符串里面有%，必须使用%%，这样Python就不会把%当成格式化操作符</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; format=&quot;Hello, %s. %s is a good day!&quot; #指定后面格式化为字符串</div><div class="line">&gt;&gt;&gt; values=(&apos;Clef&apos;,&apos;It&apos;)</div><div class="line">&gt;&gt;&gt; print （format % values）</div><div class="line">Hello, Clef. It is a good day!</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/08/17/python学习笔记2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/17/python学习笔记2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-python-学习笔记1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/16/python-学习笔记1/">Python 学习笔记1</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/16/python-学习笔记1/" class="archive-article-date">
-  	<time datetime="2017-08-16T08:37:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><p>一种解释型的，面向对象的，带有动态语义的高级程序设计语言</p>
-<h2 id="第一章-基础知识"><a href="#第一章-基础知识" class="headerlink" title="第一章 基础知识"></a>第一章 基础知识</h2><h2 id="1-1-基本运算符"><a href="#1-1-基本运算符" class="headerlink" title="1.1 基本运算符"></a>1.1 基本运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+，-，*，/，%，//( 取整)，**（幂运算）</div></pre></td></tr></table></figure>
-<p>八进制 0o<br>十六进制 0x<br>长字符串用3个引号代替<br>转义字符\<br>变量，语句，函数，模块等概念</p>
-<h1 id="2-列表和元组"><a href="#2-列表和元组" class="headerlink" title="2 列表和元组"></a>2 列表和元组</h1><h2 id="2-1-序列概述"><a href="#2-1-序列概述" class="headerlink" title="2.1 序列概述"></a>2.1 序列概述</h2><p>pythomn 最基本数据结构是序列，序列中的每个元素被分配一个序列——即元素的位置，也称为索引。第一个索引序号为0</p>
-<p>Python中六种内建的序列 ： 列表，元祖，字符串，Unicode字符串，buffer对象.xrange对象</p>
-<p><strong>列表和元组的区别</strong>：列表是可以修改的，元组是不能的</p>
-        
-          <a class="article-more-a" href="/2017/08/16/python-学习笔记1/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">study</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/16/python-学习笔记1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Oracle学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/28/Oracle学习/">Oracle学习</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/28/Oracle学习/" class="archive-article-date">
-  	<time datetime="2017-07-28T01:13:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#Oracle 学习笔记</p>
-<p>##1 oracle11g 概述</p>
-<h3 id="1-1-oracle发展历史"><a href="#1-1-oracle发展历史" class="headerlink" title="1.1 oracle发展历史"></a>1.1 oracle发展历史</h3><p>起源于1970年《大型共享数据库的关系模型》<br>目前已经到oracle12g</p>
-<p>###1.2关系数据库基本理论<br>数据库管理技术<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">graph LR;  </div><div class="line">	人工管理--&gt;文件管理;</div><div class="line">	文件管理--&gt;数据库系统</div></pre></td></tr></table></figure></p>
-<p>数据模型<br>层次模型 网状模型 关系模型  </p>
-<div id="flowchart-0" class="flow-chart"></div>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:center">属性</th>
-<th style="text-align:right">方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">测试</td>
-<td style="text-align:center"><strong><code>name</code></strong></td>
-<td style="text-align:right">test（）</td>
-</tr>
-<tr>
-<td style="text-align:left">测试</td>
-<td style="text-align:center"><strong><code>name</code></strong></td>
-<td style="text-align:right">test（）</td>
-<td><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">graph LR;  
-　　A-->B;    
-　　A-->C;  
-　　B-->D;  
-　　C-->D;</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></td>
-</tr>
-</tbody>
-</table>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/28/Oracle学习/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -1050,11 +955,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
+                <a href="javascript:void(0)" class="js-tag color3">eclipse</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1071,6 +980,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">时间序列</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
             
             <div class="clearfix"></div>

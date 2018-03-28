@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yuanleiuestc.github.io">
-  <title>Archives: 2018 | 磊の博客</title>
+  <title>磊の博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="磊の博客">
-<meta property="og:url" content="https://yuanleiuestc.github.io/文章/2018/index.html">
+<meta property="og:url" content="https://yuanleiuestc.github.io/page/3/index.html">
 <meta property="og:site_name" content="磊の博客">
 <meta property="og:description" content="知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。">
 <meta name="twitter:card" content="summary">
@@ -130,316 +130,176 @@
           <div id="js-content" class="content-ll">
             
   
-  
+    <article id="post-时间序列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/13/jsqlparse教程/" class="archive-article-date">
-  	<time datetime="2018-03-13T03:52:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/13/jsqlparse教程/">Jsqlparse教程</a>
+      <a class="article-title" href="/2017/07/08/时间序列/">时间序列预测 Python实现</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/11/eclipse常用快捷键/" class="archive-article-date">
-  	<time datetime="2018-03-11T02:03:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-11</time>
+        
+        <a href="/2017/07/08/时间序列/" class="archive-article-date">
+  	<time datetime="2017-07-08T14:00:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/11/eclipse常用快捷键/">Eclipse常用快捷键</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#时间序列预测 python实现<br>使用<strong><code>ARIMA</code></strong>实现。</p>
+<p>##理论知识<br>ARIMA模型全称为自回归积分滑动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，<br>ARIMA(p,d,q)称为差分自回归移动平均模型<br>AR是”自回归”，p为自回归项数；MA为”滑动平均”，q为滑动平均项数，d为使之成为平稳序列所做的差分次数（阶数）</p>
+<p>时间序列的假设：<strong>时间序列的行为不随时间改变</strong>。。数学知识不足，去学习相关的知识。</p>
+<p>1.首先识别时间序列的稳定性，通过<code>散点图</code>，<code>自相关函数</code>，<code>偏相关函数</code>判断是否平稳<br>2.如果不是平稳的，采用d阶查分，使得序列变得稳定。<br><strong>？？为什么算法要求文档呢</strong><br>AC自相关系数 ，PAC偏相关系数 </p>
+<p>3.根据所识别的特征建立相应的时间模型，自相关函数是拖尾的（？？）<br>采用AR模型，偏相关拖尾的，采用 MA模型，自相关函数和偏相关函数都是拖尾的，则采用 ARMA模型</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习，python</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">eclipse</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ARIMA</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">时间序列</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/08/时间序列/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/08/java学习笔记并发-1/" class="archive-article-date">
-  	<time datetime="2018-03-08T08:11:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hexo-github-博客搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/08/java学习笔记并发-1/">Java学习笔记并发</a>
+      <a class="article-title" href="/2017/07/07/hexo-github-博客搭建/">Hexo+github 博客搭建</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/08/java学习笔记并发/" class="archive-article-date">
-  	<time datetime="2018-03-08T07:23:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+        
+        <a href="/2017/07/07/hexo-github-博客搭建/" class="archive-article-date">
+  	<time datetime="2017-07-07T14:01:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-07</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/08/java学习笔记并发/">Java学习笔记并发</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/08/java学习笔记注解/" class="archive-article-date">
-  	<time datetime="2018-03-08T07:23:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/08/java学习笔记注解/">Java学习笔记注解</a>
-    </h1>
-  
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Hexo-github博客搭建"><a href="#Hexo-github博客搭建" class="headerlink" title="Hexo+github博客搭建"></a>Hexo+github博客搭建</h1><h2 id="安装软件node-js-git-网上找资料下"><a href="#安装软件node-js-git-网上找资料下" class="headerlink" title="安装软件node.js , git 网上找资料下"></a>安装软件node.js , git 网上找资料下</h2><h2 id="安装Hexo-本博客采用3-0版本"><a href="#安装Hexo-本博客采用3-0版本" class="headerlink" title="安装Hexo(本博客采用3.0版本)"></a>安装Hexo(本博客采用3.0版本)</h2><p>   打开Git Bash,执行下面命令</p>
+<pre><code> npm install -g hexo-cli
+</code></pre>
+如果安装失败，采用淘宝的镜像
+        
+          <a class="article-more-a" href="/2017/07/07/hexo-github-博客搭建/#more">more >></a>
+        
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/08/java学习笔记IO/" class="archive-article-date">
-  	<time datetime="2018-03-08T07:10:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/08/java学习笔记IO/">java学习笔记IO</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-java学习笔记">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/08/枚举/" class="archive-article-date">
-  	<time datetime="2018-03-08T06:11:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/08/枚举/">枚举</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/07/hexo-github-博客搭建/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/15/tags/随笔/新的开始/" class="archive-article-date">
-  	<time datetime="2018-02-14T16:46:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-15</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/15/tags/随笔/新的开始/">新的开始</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/10/内部类/" class="archive-article-date">
-  	<time datetime="2018-01-10T10:52:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/10/内部类/">内部类</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/08/访问权限控制/" class="archive-article-date">
-  	<time datetime="2018-01-08T04:25:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/08/访问权限控制/">访问权限控制</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
   
-
-    
 
 
           </div>
@@ -461,9 +321,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

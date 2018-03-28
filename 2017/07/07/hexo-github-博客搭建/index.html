@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://yuanleiuestc.github.io/2017/07/07/hexo-github-博客搭建/index.html">
 <meta property="og:site_name" content="磊の博客">
 <meta property="og:description" content="Hexo+github博客搭建安装软件node.js , git 网上找资料下安装Hexo(本博客采用3.0版本)   打开Git Bash,执行下面命令  npm install -g hexo-cli  如果安装失败，采用淘宝的镜像">
-<meta property="og:updated_time" content="2017-07-28T02:19:38.000Z">
+<meta property="og:updated_time" content="2018-03-06T07:53:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+github 博客搭建">
 <meta name="twitter:description" content="Hexo+github博客搭建安装软件node.js , git 网上找资料下安装Hexo(本博客采用3.0版本)   打开Git Bash,执行下面命令  npm install -g hexo-cli  如果安装失败，采用淘宝的镜像">
@@ -209,7 +209,7 @@ url: https://yuanleiuestc.github.io #你的博客地址
 deploy:
   type: git
   repository: git@github.com:yuanleiuestc/yuanleiuestc.github.io.git
-  branch: maste
+  branch: master
 </code></pre>
 
 <h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><pre><code>
@@ -227,6 +227,19 @@ hexo new 'my-first-blog'
 
 
 <h1 id="主题下载"><a href="#主题下载" class="headerlink" title="主题下载"></a>主题下载</h1><p> git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia.git</a> </p>
+<h1 id="遇到的问题："><a href="#遇到的问题：" class="headerlink" title="遇到的问题："></a>遇到的问题：</h1><p>遇到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">bash: /dev/tty: No such device or address</div><div class="line">error: failed to execute prompt script (exit code 1)</div><div class="line">fatal: could not read Username for &apos;GitHub · Where software is built&apos;: No error</div></pre></td></tr></table></figure></p>
+<p>原来的配置为：</p>
+<pre><code>
+deploy:
+  type: git
+  repository: git@github.com:yuanleiuestc/yuanleiuestc.github.io.git
+  branch: master
+修改为如下：
+deploy:
+  type: git
+  repository:  https://{yourname}:{yourpassword}@github.com/{yournam{yourname}.github.io.git
+  branch: master
+</code></pre>
 
       
 
@@ -381,11 +394,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
+                <a href="javascript:void(0)" class="js-tag color3">eclipse</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -402,6 +419,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">时间序列</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
             
             <div class="clearfix"></div>
